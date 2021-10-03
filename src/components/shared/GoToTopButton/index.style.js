@@ -9,7 +9,6 @@ export const StyledButton = styled.button`
   bottom: 10%;
   left: 2%;
   z-index: 1;
-  font-size: 12px;
   border: none;
   outline: none;
   background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-hover));
@@ -17,7 +16,7 @@ export const StyledButton = styled.button`
   color: var(--color-secondary-hover);
   cursor: pointer;
   border-radius: 8px;
-  transition: all .1s linear;
+  transition: all .2s linear;
   display: flex;
   justify-content: center;
   align-items: center;

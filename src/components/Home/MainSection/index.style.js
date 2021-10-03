@@ -47,7 +47,7 @@ export const StyledItem = styled(Item)`
 `;
 
 export const StyledButton = styled(Button)`
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     box-shadow: var(--shadow-dp2) !important;
     color: var(--color-secondary-hover) !important;
     font-weight: bold !important;
@@ -57,10 +57,14 @@ export const StyledButton = styled(Button)`
     background-position: 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 0% 100% !important;
-    transition: background-size .5s, color .5s !important;
+    transition: background-size .5s, color .5s, all .3s ease !important;
 
     &:hover {
         background-size: 100% 100% !important;
         box-shadow: var(--shadow-dp4) !important;
+    }
+
+    &:active {
+        transform: scale(.96);
     }
 `;

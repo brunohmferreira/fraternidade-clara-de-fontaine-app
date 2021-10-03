@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     width: 100%;
-    height: 40px;
+    height: 30px;
     background-color: var(--color-white);
     display: flex;
     align-items: center;
