@@ -10,6 +10,7 @@ const TrabalhoReligiosoPage = () => {
         <TemplatePage 
             currentPage={currentPage}
             content={<h1>Bruno</h1>}
+            showLogoOnTopMenu
         />
     );
 };

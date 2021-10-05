@@ -4,14 +4,13 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const DistribuicaoDeSopaELancheSection = ({ handleButtonClick, rightImage }) => {
+const DistribuicaoDeSopaELancheSection = ({ rightImage }) => {
 
     const currentSection = Pages.DistribuicaoDeSopaELanche;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
             image=''
             title={currentSection.name}
@@ -28,12 +27,10 @@ const DistribuicaoDeSopaELancheSection = ({ handleButtonClick, rightImage }) => 
 };
 
 DistribuicaoDeSopaELancheSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 DistribuicaoDeSopaELancheSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 

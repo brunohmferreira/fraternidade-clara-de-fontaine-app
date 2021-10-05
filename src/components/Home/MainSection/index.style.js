@@ -1,16 +1,10 @@
 import styled from 'styled-components';
-import { Button, Image, Item } from 'semantic-ui-react';
+import { Button, Image } from 'semantic-ui-react';
 
 export const StyledBackgroundImage = styled(Image)`
     position: relative;
     width: 100%;
     z-index: -1;
-`;
-
-export const StyledImage = styled(Image)`
-    width: 20%;
-    z-index: 0;
-    margin-right: 2%;
 `;
 
 export const StyledDivTitle = styled.div`
@@ -31,19 +25,6 @@ export const StyledDivButton = styled.div`
     width: 70%;
     padding-top: 20%;
     z-index: 0;
-`;
-
-export const StyledSpan = styled.span`
-    font-weight: bold;
-    font-size: 50px;
-    font-family: Rubik;
-    color: var(--color-white);
-    text-shadow: var(--black-stroke); 
-    z-index: 0;
-`;
-
-export const StyledItem = styled(Item)`
-    padding-bottom: 2% !important;
 `;
 
 export const StyledButton = styled(Button)`

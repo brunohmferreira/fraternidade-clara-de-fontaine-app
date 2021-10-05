@@ -4,21 +4,21 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const EducacaoMediunicaSection = ({ handleButtonClick, rightImage }) => {
+const EducacaoMediunicaSection = ({ rightImage }) => {
 
     const currentSection = Pages.EducacaoMediunica;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
-            image=''
+            image='\images\EducacaoMediunica.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>.</Italic></p>
-                    <p><Author></Author></p>
+                    <p><Italic>A mediunidade é uma coisa sagrada, que deve ser praticada 
+                        santamente religiosamente.</Italic></p>
+                    <p><Author>Allan Kardec</Author></p>
                     <p><Bold>Horário:</Bold></p>
                     <p>Quinta-feira às 19:30</p>
                 </>
@@ -28,12 +28,10 @@ const EducacaoMediunicaSection = ({ handleButtonClick, rightImage }) => {
 };
 
 EducacaoMediunicaSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 EducacaoMediunicaSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 

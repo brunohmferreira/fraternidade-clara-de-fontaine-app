@@ -1,11 +1,6 @@
 import styled from 'styled-components';
-import { Image, Menu } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
 
-export const StyledImage = styled(Image)`
-    width: 40%;
-    padding-left: 1%;
-    padding-bottom: 1%;
-`;
 export const StyledMenu = styled(Menu)`
     z-index: 1;
     position: absolute;

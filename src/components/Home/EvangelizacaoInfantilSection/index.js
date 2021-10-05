@@ -4,21 +4,20 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const EvangelizacaoInfantilSection = ({ handleButtonClick, rightImage }) => {
+const EvangelizacaoInfantilSection = ({ rightImage }) => {
 
     const currentSection = Pages.EvangelizacaoInfantil;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
-            image=''
+            image='\images\EvangelizacaoInfantilImage.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>.</Italic></p>
-                    <p><Author></Author></p>
+                    <p><Italic>Deixem vir a mim as crianças e não as impeçam; pois o Reino dos céus pertence aos que são semelhantes a elas.</Italic></p>
+                    <p><Author>Mateus 19:14</Author></p>
                     <p><Bold>Horário:</Bold></p>
                     <p>Segunda-feira às 20:00</p>
                 </>
@@ -28,12 +27,10 @@ const EvangelizacaoInfantilSection = ({ handleButtonClick, rightImage }) => {
 };
 
 EvangelizacaoInfantilSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 EvangelizacaoInfantilSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 

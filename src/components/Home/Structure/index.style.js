@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Item } from 'semantic-ui-react';
 
 export const Wrapper = styled.div`
-    padding: 0px;
+    padding: 0;
 `;
 
 export const StyledItemGroup = styled(Item.Group)`

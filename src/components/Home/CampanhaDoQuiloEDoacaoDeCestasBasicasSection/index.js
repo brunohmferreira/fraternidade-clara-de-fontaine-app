@@ -4,21 +4,20 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ handleButtonClick, rightImage }) => {
+const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ rightImage }) => {
 
     const currentSection = Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
-            image=''
+            image='\images\CampanhaDoQuiloImage.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>.</Italic></p>
-                    <p><Author></Author></p>
+                    <p><Italic>O Rei responderá: 'Digo a verdade: O que vocês fizerem a algum dos meus menores irmãos, a mim o fizeram.</Italic></p>
+                    <p><Author>Mateus 25:40</Author></p>
                     <p><Bold>Horários:</Bold></p>
                     <p>Sábado às 8:45</p>
                     <p>Domingo às 8:45</p>
@@ -29,12 +28,10 @@ const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ handleButtonClick, right
 };
 
 CampanhaDoQuiloEDoacaoDeCestasBasicasSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 CampanhaDoQuiloEDoacaoDeCestasBasicasSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 

@@ -4,14 +4,13 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Italic, Bold } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const ProgramaRenascerSection = ({ handleButtonClick, rightImage }) => {
+const ProgramaRenascerSection = ({ rightImage }) => {
 
     const currentSection = Pages.ProgramaRenascer;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
             image='\images\ProgramaRenascerLogo.png'
             title={currentSection.name}
@@ -28,12 +27,10 @@ const ProgramaRenascerSection = ({ handleButtonClick, rightImage }) => {
 };
 
 ProgramaRenascerSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 ProgramaRenascerSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 

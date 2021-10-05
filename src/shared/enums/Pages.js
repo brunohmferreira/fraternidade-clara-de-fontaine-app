@@ -1,7 +1,7 @@
 export const Pages = {
     Home: {
         id: 0,
-        name: 'Home',
+        name: 'home',
         path: ''
     },
     TrabalhoReligioso: {

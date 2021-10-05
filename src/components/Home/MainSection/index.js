@@ -1,42 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Item } from 'semantic-ui-react';
+import React, { useContext } from 'react';
 import { Pages } from '../../../shared/enums/Pages';
-import { StyledButton, StyledSpan, StyledDivTitle, StyledBackgroundImage, StyledImage, StyledItem, StyledDivButton } from './index.style';
+import { StyledButton, StyledDivTitle, StyledBackgroundImage, StyledDivButton } from './index.style';
+import LogoAndName from '../../shared/LogoAndName';
+import ChangePageContext from '../../../store/contexts/home/changePageContext';
 
-const MainSection = ({ handleButtonClick }) => {
+const MainSection = () => {
+
+    const handleChangePage = useContext(ChangePageContext); 
 
     return (
         <>
         <StyledBackgroundImage src='\images\Sunflowers.png' />
         <StyledDivTitle>
-            <StyledImage src='\images\SimpleLogo.png' />
-            <Item.Group>
-                <StyledItem>
-                    <Item.Content verticalAlign='middle'>
-                        <StyledSpan>FRATERNIDADE ESPÍRITA</StyledSpan>
-                    </Item.Content>
-                </StyledItem>
-                <Item>
-                    <Item.Content verticalAlign='middle'>
-                        <StyledSpan>CLARA DE FONTAINE</StyledSpan>
-                    </Item.Content>
-                </Item>
-            </Item.Group>
+            <LogoAndName showName />
         </StyledDivTitle>
         <StyledDivButton>
-            <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO' onClick={() => handleButtonClick(Pages.TrabalhoReligioso)} />
+            <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO' onClick={() => handleChangePage(Pages.TrabalhoReligioso)} />
         </StyledDivButton>
         </>
     );
-};
-
-MainSection.propTypes = {
-    handleButtonClick: PropTypes.func
-};
-
-MainSection.defaultProps = {
-    handleButtonClick: () => {}
 };
 
 export default MainSection;

@@ -5,8 +5,9 @@ import TopMenu from '../../components/shared/TopMenu';
 import PageFooter from '../../components/shared/PageFooter';
 import { useHistory } from 'react-router-dom';
 import GoToTopButton from '../../components/shared/GoToTopButton';
+import ChangePageContext from '../../store/contexts/home/changePageContext';
 
-const TemplatePage = ({ currentPage, content }) => {
+const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 
     const history = useHistory();
 
@@ -15,22 +16,24 @@ const TemplatePage = ({ currentPage, content }) => {
     }
 
     return (
-        <>
-            <TopMenu activeItem={currentPage}  handleChangePage={handleChangePage} />
+        <ChangePageContext.Provider value={handleChangePage}>
+            <TopMenu showLogo={showLogoOnTopMenu} activeItem={currentPage}  handleChangePage={handleChangePage} />
             {content}
             <GoToTopButton />
             <GroupHoverButton />
             <PageFooter />
-        </>
+        </ChangePageContext.Provider>
     );
 };
 
 TemplatePage.propTypes = {
-    handleChangePage: PropTypes.func
+    handleChangePage: PropTypes.func,
+    showLogoOnTopMenu: PropTypes.bool
 };
 
 TemplatePage.defaultProps = {
-    handleChangePage: () => {}
+    handleChangePage: () => {},
+    showLogoOnTopMenu: false
 };
 
 export default TemplatePage;

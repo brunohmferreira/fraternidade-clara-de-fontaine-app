@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledImage, StyledMenu, StyledMenuItem } from './index.style';
+import { StyledMenu, StyledMenuItem } from './index.style';
 import { Pages } from '../../../shared/enums/Pages';
 import { Menu } from 'semantic-ui-react'
+import LogoAndName from '../LogoAndName';
 
 const TopMenu = ({ activeItem,  handleChangePage, showLogo }) => {
 
@@ -12,7 +13,7 @@ const TopMenu = ({ activeItem,  handleChangePage, showLogo }) => {
     return (
         <StyledMenu pointing secondary stackable>
             <Menu.Item style={{ width: '10%', padding: 0, cursor: 'pointer' }} position='left' onClick={() => handleChangePage(Pages.Home)}>
-                { showLogo && <StyledImage src='\images\SimpleLogo.png' /> }
+                { showLogo && <LogoAndName imageWidth='80%' imageHeight='100%' /> }
             </Menu.Item>
             {pageOptions.map((page) => {
                 return (

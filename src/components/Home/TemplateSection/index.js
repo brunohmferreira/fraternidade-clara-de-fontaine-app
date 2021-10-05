@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledTextSpan, StyledItem, Wrapper } from './index.style';
+import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledTextSpan, StyledItemText, Wrapper, StyledItemTitle } from './index.style';
 import { Item } from 'semantic-ui-react';
 import { Pages } from '../../../shared/enums/Pages';
 import ReadMoreButton from '../../shared/ReadMoreButton';
+import ChangePageContext from '../../../store/contexts/home/changePageContext';
 
-const TemplateSection = ({ handleButtonClick, section, image, title, text, rightImage }) => {
+const TemplateSection = ({ section, image, title, text, rightImage }) => {
+
+    const handleChangePage = useContext(ChangePageContext); 
 
     const ImageSection = () => {
         return (
@@ -18,19 +21,19 @@ const TemplateSection = ({ handleButtonClick, section, image, title, text, right
     const TextSection = () => {
         return (
             <Item.Group>
-                {title && <StyledItem>
+                {title && <StyledItemTitle>
                     <StyledTitleSpan>
                         {title}
                     </StyledTitleSpan>
-                </StyledItem>}
-                {text && <Item>
+                </StyledItemTitle>}
+                {text && <StyledItemText>
                     <StyledTextSpan>
                         {text}
                     </StyledTextSpan>
-                </Item>}
-                {section && <Item>
-                    <ReadMoreButton handleButtonClick={handleButtonClick} pageToOpen={section} />
-                </Item>}
+                </StyledItemText>}
+                {section && <StyledItemText>
+                    <ReadMoreButton handleButtonClick={handleChangePage} pageToOpen={section} />
+                </StyledItemText>}
             </Item.Group>
         );
     }
@@ -48,7 +51,6 @@ const TemplateSection = ({ handleButtonClick, section, image, title, text, right
 };
 
 TemplateSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     section: PropTypes.object,
     image: PropTypes.string,
     title: PropTypes.string,
@@ -57,7 +59,6 @@ TemplateSection.propTypes = {
 };
 
 TemplateSection.defaultProps = {
-    handleButtonClick: () => {},
     section: Pages.Home,
     image: '',
     title: '',

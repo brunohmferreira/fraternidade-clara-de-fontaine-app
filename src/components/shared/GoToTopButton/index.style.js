@@ -6,7 +6,7 @@ export const StyledButton = styled.button`
   height: 40px;
   width: 40px;
   position: fixed;
-  bottom: 10%;
+  bottom: 5%;
   left: 2%;
   z-index: 1;
   border: none;

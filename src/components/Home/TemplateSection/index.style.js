@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { Image, Item } from 'semantic-ui-react';
 
 export const Wrapper = styled.div`
-    padding: 0px;
-    height: 500px;
+    padding: 0;
     width: 100%;
     display: flex;
+    min-height: 300px;
+    max-height: 800px;
 
     ${props => props.gradientToLeft ? `
         background-image: linear-gradient(to left, var(--color-secondary), var(--color-secondary-hover));
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
 `;
 
 export const StyledImage = styled(Image)`
-    height: 100%;
+    width: 100%;
     z-index: 0;
     padding: 0;
 `;
@@ -31,7 +32,7 @@ export const StyledLeftDiv = styled.div`
     ${props => props.center ? `
         justify-content: center;
         align-items: center;
-        padding: 10%;
+        padding: 5%;
     ` : `
         justify-content: left;
         align-items: left;
@@ -49,7 +50,7 @@ export const StyledRightDiv = styled.div`
     ${props => props.center ? `
         justify-content: center;
         align-items: center;
-        padding: 10%;
+        padding: 5%;
     ` : `
         justify-content: right;
         align-items: right;
@@ -62,7 +63,7 @@ export const StyledTitleSpan = styled.span`
     font-weight: bold;
     text-align: justify;
     line-height: 30px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +77,10 @@ export const StyledTextSpan = styled.span`
     margin-bottom: 10%;
 `;
 
-export const StyledItem = styled(Item)`
+export const StyledItemTitle = styled(Item)`
     display: block !important;
+`;
+
+export const StyledItemText = styled(Item)`
+    margin: 0 !important;
 `;

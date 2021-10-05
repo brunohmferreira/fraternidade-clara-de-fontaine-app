@@ -10,5 +10,5 @@ export const Italic  = styled.span`
 
 export const Author  = styled.span`
     font-size: 12px;
-    margin-left: 70%;
+    margin-left: 30%;
 `;

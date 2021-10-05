@@ -4,21 +4,20 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const RecepcaoEAtendimentoFraternoSection = ({ handleButtonClick, rightImage }) => {
+const RecepcaoEAtendimentoFraternoSection = ({ rightImage }) => {
 
     const currentSection = Pages.RecepcaoEAtendimentoFraterno;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
-            image=''
+            image='\images\AtendimentoFraternoImage.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>.</Italic></p>
-                    <p><Author></Author></p>
+                    <p><Italic>Vinde a mim todos vós que estais aflitos e sobrecarregados, que eu vos aliviarei.</Italic></p>
+                    <p><Author>Mateus 11:28</Author></p>
                     <p><Bold>Horários:</Bold></p>
                     <p>Segunda-feira às 20:00</p>
                     <p>Quarta-feira às 20:00</p>
@@ -29,12 +28,10 @@ const RecepcaoEAtendimentoFraternoSection = ({ handleButtonClick, rightImage }) 
 };
 
 RecepcaoEAtendimentoFraternoSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 RecepcaoEAtendimentoFraternoSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 

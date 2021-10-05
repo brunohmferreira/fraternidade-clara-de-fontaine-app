@@ -4,16 +4,15 @@ import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
 
-const ReuniaoPublicaSection = ({ handleButtonClick, rightImage }) => {
+const ReuniaoPublicaSection = ({ rightImage }) => {
 
     const currentSection = Pages.ReuniaoPublica;
 
     return (
         <TemplateSection 
             rightImage={rightImage}
-            handleButtonClick={handleButtonClick} 
             section={currentSection}
-            image='\images\JesusMeeting.png'
+            image='\images\ReuniaoPublicaImage.png'
             title={currentSection.name}
             text={
                 <>
@@ -29,12 +28,10 @@ const ReuniaoPublicaSection = ({ handleButtonClick, rightImage }) => {
 };
 
 ReuniaoPublicaSection.propTypes = {
-    handleButtonClick: PropTypes.func,
     rightImage: PropTypes.bool
 };
 
 ReuniaoPublicaSection.defaultProps = {
-    handleButtonClick: () => {},
     rightImage: false
 };
 
