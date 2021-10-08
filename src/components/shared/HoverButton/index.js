@@ -1,24 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { StyledButton } from './index.style';
+import { StyledButton, StyledSpan, StyledIcon, StyledDiv } from './index.style';
 
 
 const HoverButton = ({ name, urlLink, iconName, colorName }) => {
+
+    const [showButtonText, setShowButtonText] = useState(false);
 
     const handleButtonClick = () => {
         window.open(`${urlLink}`, '_blank');
     }
 
+    const handleMouseOver = (showText) => {
+        setTimeout(() => {  setShowButtonText(showText); }, 100);
+      }
+
     return (
         <StyledButton
+            onMouseOver={() => handleMouseOver(true)} 
+            onMouseLeave={() => handleMouseOver(false)}        
+            onClick={() => handleButtonClick()}
             circular
             color={colorName} 
-            icon={iconName} 
-            size="large"
-            onClick={handleButtonClick}
-            data-toggle='tooltip'
-            title={name}
-        />
+        >
+            <StyledDiv>
+                {showButtonText && (<StyledSpan>{name}</StyledSpan>)}
+                <StyledIcon
+                    name={iconName}
+                    size='large'
+                />
+            </StyledDiv>
+        </StyledButton>
     );
 };
 

@@ -21,14 +21,14 @@ const GoToTopButton = () => {
     document.body.scroll({top: 0, left: 0, behavior: 'smooth' });
   }
   
-  const handleMouseOverLeave = (showButton) => {
-    setShowButtonText(showButton);
+  const handleMouseOver = (showText) => {
+    setTimeout(() => {  setShowButtonText(showText); }, 100);
   }
 
   return (
     <StyledButton 
-      onMouseOver={() => handleMouseOverLeave(true)} 
-      onMouseLeave={() => handleMouseOverLeave(false)}
+      onMouseOver={() => handleMouseOver(true)} 
+      onMouseLeave={() => handleMouseOver(false)}
       onClick={() => handleButtonClick()} 
       style={{ display : isVisible ? 'flex' : 'none' }}>
       <StyledDiv>
