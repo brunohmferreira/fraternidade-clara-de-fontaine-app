@@ -32,6 +32,7 @@ export const StyledButton  = styled.div`
         height: 40px;
         transition: all .3s ease;
     }
+    
     &:hover{
         color: var(--color-secondary-hover);
         
@@ -41,6 +42,7 @@ export const StyledButton  = styled.div`
             opacity: 1;
         }
     }
+
     &:active {
         transform: scale(.96);
     }

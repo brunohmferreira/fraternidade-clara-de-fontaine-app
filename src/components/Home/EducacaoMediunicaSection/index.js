@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
+import TemplateDaysAndTimesList from '../TemplateDaysAndTimesList';
 
 const EducacaoMediunicaSection = ({ rightImage }) => {
 
@@ -20,7 +21,7 @@ const EducacaoMediunicaSection = ({ rightImage }) => {
                         santamente religiosamente.</Italic></p>
                     <p><Author>Allan Kardec</Author></p>
                     <p><Bold>Horário:</Bold></p>
-                    <p>Quinta-feira às 19:30</p>
+                    <TemplateDaysAndTimesList daysAndTimesList={currentSection.daysAndTimes} />
                 </>
             }
         />

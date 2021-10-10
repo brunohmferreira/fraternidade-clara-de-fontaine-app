@@ -28,6 +28,10 @@ export const StyledButton = styled.button`
     display: flex;
     box-shadow: var(--shadow-dp1);
   }
+
+  &:active {
+    transform: scale(.96);
+  }
 `;
 
 export const StyledSpan = styled.span`

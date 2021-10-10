@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Pages } from '../../../shared/enums/Pages';
-import { Author, Bold, Italic } from './index.style';
+import { Author, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
+import TemplateDaysAndTimesList from '../TemplateDaysAndTimesList';
 
 const SosPrecesSection = ({ rightImage }) => {
 
@@ -22,8 +23,7 @@ const SosPrecesSection = ({ rightImage }) => {
                     <p><Italic>– Bem-aventurados os que sofrem perseguição pela justiça, pois que é deles 
                         o reino dos céus.</Italic></p>
                     <p><Author>Mateus, 5:4, 6 e 10</Author></p>
-                    <p><Bold>Atendimento diariamente pelo telefone: </Bold></p>
-                    <p><Bold>(31) 3334-9700</Bold></p>
+                    <TemplateDaysAndTimesList daysAndTimesList={currentSection.daysAndTimes} boldText />
                 </>
             }
         />

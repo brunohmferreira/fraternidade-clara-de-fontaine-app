@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
+import TemplateDaysAndTimesList from '../TemplateDaysAndTimesList';
 
 const DistribuicaoDeSopaELancheSection = ({ rightImage }) => {
 
@@ -19,7 +20,7 @@ const DistribuicaoDeSopaELancheSection = ({ rightImage }) => {
                     <p><Italic>.</Italic></p>
                     <p><Author></Author></p>
                     <p><Bold>Horário: </Bold></p>
-                    <p>Domingo</p>
+                    <TemplateDaysAndTimesList daysAndTimesList={currentSection.daysAndTimes} />
                 </>
             }
         />

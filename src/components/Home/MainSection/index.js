@@ -10,7 +10,7 @@ const MainSection = () => {
 
     return (
         <>
-        <StyledBackgroundImage src='\images\Sunflowers.png' />
+        <StyledBackgroundImage src='\images\SunflowersBackground.png' />
         <StyledDivTitle>
             <LogoAndName showName />
         </StyledDivTitle>

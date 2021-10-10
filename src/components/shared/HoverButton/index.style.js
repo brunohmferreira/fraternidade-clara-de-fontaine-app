@@ -21,6 +21,10 @@ export const StyledButton = styled(Button)`
     display: flex;
     box-shadow: var(--shadow-dp2);
   }
+
+  &:active {
+    transform: scale(.96);
+  }
 `;
 
 export const StyledSpan = styled.span`

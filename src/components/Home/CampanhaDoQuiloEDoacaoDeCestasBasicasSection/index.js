@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
+import TemplateDaysAndTimesList from '../TemplateDaysAndTimesList';
 
 const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ rightImage }) => {
 
@@ -19,8 +20,7 @@ const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ rightImage }) => {
                     <p><Italic>O Rei responderá: 'Digo a verdade: O que vocês fizerem a algum dos meus menores irmãos, a mim o fizeram.</Italic></p>
                     <p><Author>Mateus 25:40</Author></p>
                     <p><Bold>Horários:</Bold></p>
-                    <p>Sábado às 8:45</p>
-                    <p>Domingo às 8:45</p>
+                    <TemplateDaysAndTimesList daysAndTimesList={currentSection.daysAndTimes} />
                 </>
             }
         />

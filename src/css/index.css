@@ -25,6 +25,7 @@ body {
   --shadow-dp2: 0px 4px 8px rgba(0,0,0,0.6);
   --shadow-dp3: 0px 2px 0px rgba(0,0,0,0.2);
   --shadow-dp4: 0px 4px 8px rgba(0,0,0,0.8);
+  --shadow-yellow: 0px 32px 64px #f8e182;
   --black-stroke: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
 }
 

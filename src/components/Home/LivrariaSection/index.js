@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Pages } from '../../../shared/enums/Pages';
 import { Author, Bold, Italic } from './index.style';
 import TemplateSection from '../TemplateSection';
+import TemplateDaysAndTimesList from '../TemplateDaysAndTimesList';
 
 const LivrariaSection = ({ rightImage }) => {
 
@@ -20,7 +21,7 @@ const LivrariaSection = ({ rightImage }) => {
                         do tempo. Aquilo que colocarmos nela, corre por nossa conta.</Italic></p>
                     <p><Author>Chico Xavier</Author></p>
                     <p><Bold>Horário de funcionamento:</Bold></p>
-                    <p>Segunda-feira de 20:00 às 21:00</p>
+                    <TemplateDaysAndTimesList daysAndTimesList={currentSection.daysAndTimes} />
                 </>
             }
         />

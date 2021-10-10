@@ -6,22 +6,22 @@ import TemplateSection from '../TemplateSection';
 
 const TrabalhoReligiosoSection = ({ rightImage }) => {
 
-    const availableServices = Object.values(Pages).map(page => page.name); 
+    const availableServices = Object.values(Pages).map(page => page.name);
     availableServices.shift();
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={Pages.TrabalhoReligioso}
             image='\images\Facade.png'
             text={
                 <>
-                    <p>A <Bold>Fraternidade Espírita Clara de Fontaine</Bold>, fundada em 02 de setembro de 1994, 
-                    é uma organização religiosa, com atividades nas áreas assistencial, cultural, beneficente e 
-                    filantrópica, sem fins lucrativos, de prazo indeterminado e tem domicílio, sede e foro na cidade 
-                    de Belo Horizonte, estado de Minas Gerais, no endereço da Rua Três Pontas, nº 2.055, bairro 
-                    Padre Eustáquio.</p>
-                    <p>A casa oferece, de forma inteiramente gratuita, os seguintes serviços: {availableServices.join('; ')}.</p>
+                    <p> A <Bold>Fraternidade Espírita Clara de Fontaine</Bold>, fundada em 02 de setembro de 1994,
+                        é uma organização religiosa, com atividades nas áreas assistencial, cultural, beneficente e
+                        filantrópica, sem fins lucrativos, de prazo indeterminado e tem domicílio, sede e foro na cidade
+                        de Belo Horizonte, estado de Minas Gerais, no endereço da Rua Três Pontas, nº 2.055, bairro
+                        Padre Eustáquio.</p>
+                    <p> A casa oferece, de forma inteiramente gratuita, os seguintes serviços: {availableServices.join('; ')}.</p>
                 </>
             }
         />
