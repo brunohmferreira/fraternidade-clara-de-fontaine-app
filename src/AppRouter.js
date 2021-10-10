@@ -1,7 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Router, Route, Switch } from 'react-router-dom';
+import { configureEnvironment } from './config/environment';
 import history from './config/history';
 import { Pages } from './shared/enums/Pages';
+import { updateEnv } from './store/actions/env';
 import CampanhaDoQuiloEDoacaoDeCestasBasicasPage from './views/CampanhaDoQuiloEDoacaoDeCestasBasicasPage';
 import DistribuicaoDeSopaELanchePage from './views/DistribuicaoDeSopaELanchePage';
 import EducacaoMediunicaPage from './views/EducacaoMediunicaPage';
@@ -14,11 +17,10 @@ import ReuniaoPublicaPage from './views/ReuniaoPublicaPage';
 import SosPrecesPage from './views/SosPrecesPage';
 import TrabalhoReligiosoPage from './views/TrabalhoReligiosoPage';
 
-const AppRouter = () => {
+const AppRouter = ({ updateEnv }) => {
 
-    //#region configuração de ambiente
-    //TODO: ambientes
-    //updateEnv(configureEnvironment());
+    //#region environment configurantion
+    updateEnv(configureEnvironment());
     //#endregion
 
     return (
@@ -42,4 +44,4 @@ const AppRouter = () => {
     );
 }
 
-export default AppRouter;
+export default connect(null, { updateEnv })(AppRouter);

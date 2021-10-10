@@ -4,6 +4,7 @@ import LogoAndName from '../../shared/LogoAndName';
 import { Item } from 'semantic-ui-react';
 import { Pages } from '../../../shared/enums/Pages';
 import ChangePageContext from '../../../store/contexts/home/changePageContext';
+import { request } from '../../../services';
 
 const PageFooter = () => {
 
@@ -14,7 +15,7 @@ const PageFooter = () => {
     availableServices.shift();
 
     const handleAddressClick = () => {
-        window.open('https://www.google.com/maps/dir/Fraternidade+Esp%C3%ADrita+Clara+de+Fontaine,+Rua+Tr%C3%AAs+Pontas,+2055+-+Carlos+Prates,+Belo+Horizonte+-+MG,+30720-300/', '_blank');
+        window.open(request().env.GOOGLE_MAPS_URL, '_blank');
     }
         
     return (
