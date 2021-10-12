@@ -12,16 +12,16 @@ const HoverButton = ({ name, urlLink, iconName, colorName }) => {
     }
 
     const handleMouseOver = (showText) => {
-        setTimeout(() => {  setShowButtonText(showText); }, 100);
-      }
+        setTimeout(() => setShowButtonText(showText), 100);
+    }
 
     return (
         <StyledButton
-            onMouseOver={() => handleMouseOver(true)} 
-            onMouseLeave={() => handleMouseOver(false)}        
+            onMouseOver={() => handleMouseOver(true)}
+            onMouseLeave={() => handleMouseOver(false)}
             onClick={() => handleButtonClick()}
             circular
-            color={colorName} 
+            color={colorName}
         >
             <StyledDiv>
                 {showButtonText && (<StyledSpan>{name}</StyledSpan>)}

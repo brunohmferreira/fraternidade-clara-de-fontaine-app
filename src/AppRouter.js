@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Router, Route, Switch } from 'react-router-dom';
 import { configureEnvironment } from './config/environment';
@@ -18,7 +17,7 @@ import ReuniaoPublicaPage from './views/ReuniaoPublicaPage';
 import SosPrecesPage from './views/SosPrecesPage';
 import TrabalhoReligiosoPage from './views/TrabalhoReligiosoPage';
 
-const AppRouter = ({ updateEnv }) => {
+const AppRouter = () => {
 
     //#region environment configurantion
     updateEnv(configureEnvironment());
@@ -27,7 +26,7 @@ const AppRouter = ({ updateEnv }) => {
     return (
         <Router history={history}>
             <Switch>
-                <Route exact path="/" component={HomePage} />
+                <Route exact path='/' component={HomePage} />
                 <Route path={`/${Pages.TrabalhoReligioso.path}`} component={TrabalhoReligiosoPage} />
                 <Route path={`/${Pages.ReuniaoPublica.path}`} component={ReuniaoPublicaPage} />
                 <Route path={`/${Pages.RecepcaoEAtendimentoFraterno.path}`} component={RecepcaoEAtendimentoFraterno} />
@@ -39,18 +38,10 @@ const AppRouter = ({ updateEnv }) => {
                 <Route path={`/${Pages.EducacaoMediunica.path}`} component={EducacaoMediunicaPage} />
                 <Route path={`/${Pages.Livraria.path}`} component={LivrariaPage} />
 
-                {process.env.NODE_ENV === 'development' && <Route path="/" component={HomePage} />}
+                {process.env.NODE_ENV === 'development' && <Route path='/' component={HomePage} />}
             </Switch>
         </Router>
     );
 }
-
-AppRouter.propTypes = {
-    updateEnv: PropTypes.func
-};
-
-AppRouter.defaultProps = {
-    updateEnv: () => {}
-};
 
 export default connect(null, { updateEnv })(AppRouter);

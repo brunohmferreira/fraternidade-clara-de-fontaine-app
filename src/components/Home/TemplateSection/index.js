@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledTextSpan, StyledItemText, Wrapper, StyledItemTitle } from './index.style';
+import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledTextSpan,
+    StyledItemText, Wrapper, StyledItemTitle } from './index.style';
 import { Item } from 'semantic-ui-react';
 import { Pages } from '../../../shared/enums/Pages';
 import ReadMoreButton from '../../shared/ReadMoreButton';
@@ -8,35 +9,31 @@ import ChangePageContext from '../../../store/contexts/home/changePageContext';
 
 const TemplateSection = ({ section, image, title, text, rightImage }) => {
 
-    const handleChangePage = useContext(ChangePageContext); 
+    const handleChangePage = useContext(ChangePageContext);
 
-    const ImageSection = () => {
-        return (
-            <>
-                {image && <StyledImage src={image} />}
-            </>
-        );
-    }
+    const ImageSection = () => (
+        <>
+            {image && <StyledImage src={image} />}
+        </>
+    );
 
-    const TextSection = () => {
-        return (
-            <Item.Group>
-                {title && <StyledItemTitle>
-                    <StyledTitleSpan>
-                        {title}
-                    </StyledTitleSpan>
-                </StyledItemTitle>}
-                {text && <StyledItemText>
-                    <StyledTextSpan>
-                        {text}
-                    </StyledTextSpan>
-                </StyledItemText>}
-                {section && <StyledItemText>
-                    <ReadMoreButton handleButtonClick={handleChangePage} pageToOpen={section} />
-                </StyledItemText>}
-            </Item.Group>
-        );
-    }
+    const TextSection = () => (
+        <Item.Group>
+            {title && <StyledItemTitle>
+                <StyledTitleSpan>
+                    {title}
+                </StyledTitleSpan>
+            </StyledItemTitle>}
+            {text && <StyledItemText>
+                <StyledTextSpan>
+                    {text}
+                </StyledTextSpan>
+            </StyledItemText>}
+            {section && <StyledItemText>
+                <ReadMoreButton handleButtonClick={handleChangePage} pageToOpen={section} />
+            </StyledItemText>}
+        </Item.Group>
+    );
 
     return (
         <Wrapper gradientToLeft={rightImage}>

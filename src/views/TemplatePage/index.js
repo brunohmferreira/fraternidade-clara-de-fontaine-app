@@ -22,7 +22,11 @@ const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 
     return (
         <ChangePageContext.Provider value={handleChangePage}>
-            <TopMenu showLogo={showLogoOnTopMenu} activeItem={currentPage}  handleChangePage={handleChangePage} />
+            <TopMenu
+                showLogo={showLogoOnTopMenu}
+                activeItem={currentPage}
+                handleChangePage={handleChangePage}
+            />
             {content}
             <GoToTopButton />
             <GroupHoverButton />

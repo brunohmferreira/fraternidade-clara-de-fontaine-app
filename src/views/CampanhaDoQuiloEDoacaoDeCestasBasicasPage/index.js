@@ -9,14 +9,14 @@ const CampanhaDoQuiloEDoacaoDeCestasBasicasPage = () => {
     const [currentPage] = useState(Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
-            content={<TemplateStructure 
-                page={currentPage} 
+            content={<TemplateStructure
+                page={currentPage}
                 content={<ContentSection />}
                 showDaysAndTimes
-                daysAndTimesList={currentPage.daysAndTimes} 
+                daysAndTimesList={currentPage.daysAndTimes}
             />}
         />
     );

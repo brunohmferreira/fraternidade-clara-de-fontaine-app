@@ -7,19 +7,19 @@ const LogoAndName = ({ showName, nameFontSize, imageWidth, imageHeight }) => {
 
     return (
         <>
-        <StyledImage imagewidth={imageWidth} imageheight={imageHeight} src='\images\SimpleLogo.png' />
-        {showName && <Item.Group>
-            <StyledItem>
-                <Item.Content >
-                    <StyledSpan nameFontSize={nameFontSize}>FRATERNIDADE ESPÍRITA</StyledSpan>
-                </Item.Content>
-            </StyledItem>
-            <Item>
-                <Item.Content verticalAlign='middle'>
-                    <StyledSpan nameFontSize={nameFontSize}>CLARA DE FONTAINE</StyledSpan>
-                </Item.Content>
-            </Item>
-        </Item.Group>}
+            <StyledImage imagewidth={imageWidth} imageheight={imageHeight} src='\images\SimpleLogo.png' />
+            {showName && <Item.Group>
+                <StyledItem>
+                    <Item.Content >
+                        <StyledSpan nameFontSize={nameFontSize}>FRATERNIDADE ESPÍRITA</StyledSpan>
+                    </Item.Content>
+                </StyledItem>
+                <Item>
+                    <Item.Content verticalAlign='middle'>
+                        <StyledSpan nameFontSize={nameFontSize}>CLARA DE FONTAINE</StyledSpan>
+                    </Item.Content>
+                </Item>
+            </Item.Group>}
         </>
     );
 };

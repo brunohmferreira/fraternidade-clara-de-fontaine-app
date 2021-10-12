@@ -10,14 +10,14 @@ const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ rightImage }) => {
     const currentSection = Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\CampanhaDoQuiloImage.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>O Rei responderá: &quot;Digo a verdade: O que vocês fizerem a algum dos 
+                    <p><Italic>O Rei responderá: &quot;Digo a verdade: O que vocês fizerem a algum dos
                         meus menores irmãos, a mim o fizeram&quot;.</Italic></p>
                     <p><Author>Mateus 25:40</Author></p>
                     <p><Bold>Horários:</Bold></p>

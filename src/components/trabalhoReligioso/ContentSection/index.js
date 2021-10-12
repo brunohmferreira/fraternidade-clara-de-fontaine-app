@@ -10,8 +10,8 @@ const ContentSection = () => {
 
     const images = [
         {
-          image: "\\images\\Facade.png",
-          caption: ""
+            image: "\\images\\Facade.png",
+            caption: ""
         }
     ];
 
@@ -25,7 +25,7 @@ const ContentSection = () => {
                     autodestruição. </p>
                 <p> Tenta dar ao educando as possibilidades de encarar a vida, o mundo e
                     as pessoas de maneira mais espiritualizada e menos materialista.</p>
-                <p> Como lema da Casa Espírita <Bold>&quot;fora da caridade não há salvação&quot; </Bold> 
+                <p> Como lema da Casa Espírita <Bold>&quot;fora da caridade não há salvação&quot; </Bold>
                     mostramos a necessidade da prática do &quot;amor ao próximo&quot; ensinado pelo Cristo,
                     sendo esta a principal meta de nossa Casa.</p>
             </StyledSpanText>
@@ -35,18 +35,18 @@ const ContentSection = () => {
                 </StyledSpanTitle>
                 <StyledDivContent>
                     <StyledSpanText>
-                        <p> A casa oferece, de forma inteiramente gratuita, os seguintes serviços: 
+                        <p> A casa oferece, de forma inteiramente gratuita, os seguintes serviços:
                             {availableServices.join('; ')}.</p>
-                        <p> Todos os serviços e demais atividades prestados por esta Instituição 
-                            são inteiramente gratuitos, não podendo os membros da administração e 
-                            demais trabalhadores, todos voluntários não remunerados, receber 
+                        <p> Todos os serviços e demais atividades prestados por esta Instituição
+                            são inteiramente gratuitos, não podendo os membros da administração e
+                            demais trabalhadores, todos voluntários não remunerados, receber
                             qualquer espécie de pagamento, sob qualquer forma.  </p>
-                        <p> A Entidade não distribui resultados, dividendos, bonificações, 
-                            participações ou parcelas de seu patrimônio, sob nenhuma forma 
+                        <p> A Entidade não distribui resultados, dividendos, bonificações,
+                            participações ou parcelas de seu patrimônio, sob nenhuma forma
                             ou pretexto. </p>
-                        <p> A Sociedade é mantida exclusivamente por doações espontâneas provindas 
-                            de seus administradores e tarefeiros voluntários e eventuais promoções 
-                            para tal fim. </p> 
+                        <p> A Sociedade é mantida exclusivamente por doações espontâneas provindas
+                            de seus administradores e tarefeiros voluntários e eventuais promoções
+                            para tal fim. </p>
                     </StyledSpanText>
                 </StyledDivContent>
             </StyledDiv>

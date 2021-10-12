@@ -6,20 +6,20 @@ const Carousel = ({ data }) => {
 
     const carouselTime = 5000;
 
-    return (  
+    return (
         <StyledCarousel
             data={data}
             time={carouselTime}
-            width="100%"
-            height="min-content"
-            radius="8px"
+            width='100%'
+            height='min-content'
+            radius='8px'
             slideNumber
             slideNumberStyle={{ fontSize: '16px' }}
             automatic
             dots
-            slideBackgroundColor="var(--color-white)"
+            slideBackgroundColor='var(--color-white)'
             thumbnails
-            thumbnailWidth="48px"
+            thumbnailWidth='48px'
         />
     );
 };

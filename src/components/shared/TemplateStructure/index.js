@@ -10,9 +10,9 @@ const TemplateStructure = ({ page, imageSource, content, showDaysAndTimes, daysA
         <Wrapper>
             <StyledItemGroup>
                 <StyledItem id={0}>
-                    <TemplateMainSection 
-                        title={page.name} 
-                        imageSource={imageSource} 
+                    <TemplateMainSection
+                        title={page.name}
+                        imageSource={imageSource}
                         showDaysAndTimes={showDaysAndTimes}
                         daysAndTimesList={daysAndTimesList}
                     />

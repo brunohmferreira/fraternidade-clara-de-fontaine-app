@@ -12,25 +12,23 @@ const Accordion = ({ listOfItems, defaultActiveItemIndex }) => {
         setActiveItemIndex(selectedItem);
     }
 
-    return (  
+    return (
         <AccordionSemantic>
-            {listOfItems.map((item) => {
-                return (
-                    <div key={item.key}>
+            {listOfItems.map((item) => (
+                <div key={item.key}>
                     <StyledAccordionTitle
                         active={activeItemIndex === item.key}
                         index={item.key}
-                        onClick={() => { handleClick(item.key) }}
-                        >
+                        onClick={() => handleClick(item.key)}
+                    >
                         <Icon name='dropdown' />
                         {item.title}
                     </StyledAccordionTitle>
                     <StyledAccordionContent active={activeItemIndex === item.key}>
                         {item.content}
                     </StyledAccordionContent>
-                    </div>
-                );
-            })}
+                </div>
+            ))}
         </AccordionSemantic>
     );
 };
