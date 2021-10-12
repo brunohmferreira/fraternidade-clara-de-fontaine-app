@@ -5,12 +5,12 @@ export const StyledImage = styled(Image)`
     z-index: 0;
     margin-right: 8px !important;
 
-    ${props => props.imageWidth && `
-        width: ${props.imageWidth};
+    ${props => props.imagewidth && `
+        width: ${props.imagewidth};
     `}
     
-    ${props => props.imageHeight && `
-        height: ${props.imageHeight};
+    ${props => props.imageheight && `
+        height: ${props.imageheight};
     `}
 `;
 

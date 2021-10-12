@@ -7,7 +7,7 @@ const LogoAndName = ({ showName, nameFontSize, imageWidth, imageHeight }) => {
 
     return (
         <>
-        <StyledImage imageWidth={imageWidth} imageHeight={imageHeight} src='\images\SimpleLogo.png' />
+        <StyledImage imagewidth={imageWidth} imageheight={imageHeight} src='\images\SimpleLogo.png' />
         {showName && <Item.Group>
             <StyledItem>
                 <Item.Content >

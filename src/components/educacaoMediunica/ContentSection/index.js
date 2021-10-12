@@ -14,7 +14,7 @@ const ContentSection = () => {
                     e preparo para desenvolver a caridade própria de sua utilização. 
                     Tem por base os ensinamentos do educador Allan Kardec e no evangelho 
                     de Jesus. </p>
-                <p> Tem por lema o <Bold>"dai e graça o que de graça recebestes"</Bold>. </p> 
+                <p> Tem por lema o <Bold>&quot;dai e graça o que de graça recebestes&quot;</Bold>. </p> 
             </StyledSpan>
         </Wrapper>
     );

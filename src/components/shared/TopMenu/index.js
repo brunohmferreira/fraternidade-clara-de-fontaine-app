@@ -18,7 +18,7 @@ const TopMenu = ({ activeItem,  handleChangePage, showLogo }) => {
             {pageOptions.map((page) => {
                 return (
                     <StyledMenuItem
-                        id={page.id}
+                        key={page.id}
                         content={page.name}
                         active={activeItem.id === page.id}
                         position='right'

@@ -16,7 +16,7 @@ const Accordion = ({ listOfItems, defaultActiveItemIndex }) => {
         <AccordionSemantic>
             {listOfItems.map((item) => {
                 return (
-                    <>
+                    <div key={item.key}>
                     <StyledAccordionTitle
                         active={activeItemIndex === item.key}
                         index={item.key}
@@ -28,7 +28,7 @@ const Accordion = ({ listOfItems, defaultActiveItemIndex }) => {
                     <StyledAccordionContent active={activeItemIndex === item.key}>
                         {item.content}
                     </StyledAccordionContent>
-                    </>
+                    </div>
                 );
             })}
         </AccordionSemantic>

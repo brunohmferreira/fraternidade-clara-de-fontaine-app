@@ -10,6 +10,6 @@ export const StyledSpan = styled.span`
     text-align: justify;
 `;
 
-export const Bold = styled.div`
+export const Bold = styled.span`
     font-weight: bold;
 `;

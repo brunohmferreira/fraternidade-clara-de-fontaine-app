@@ -6,6 +6,7 @@ import PageFooter from '../../components/shared/PageFooter';
 import { useHistory } from 'react-router-dom';
 import GoToTopButton from '../../components/shared/GoToTopButton';
 import ChangePageContext from '../../store/contexts/home/changePageContext';
+import { Pages } from '../../shared/enums/Pages';
 
 const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 
@@ -31,12 +32,14 @@ const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 };
 
 TemplatePage.propTypes = {
-    handleChangePage: PropTypes.func,
+    currentPage: PropTypes.object,
+    content: PropTypes.element,
     showLogoOnTopMenu: PropTypes.bool
 };
 
 TemplatePage.defaultProps = {
-    handleChangePage: () => {},
+    currentPage: Pages.Home,
+    content: <></>,
     showLogoOnTopMenu: false
 };
 

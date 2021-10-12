@@ -20,9 +20,9 @@ const TemplateMainSection = ({ title, imageSource, showDaysAndTimes, daysAndTime
                         {daysAndTimesList.length > 1 ? 'Horários:' : 'Horário:'} 
                     </StyledSpanSubtitle>
                 </StyledItem>}
-                {daysAndTimesList && daysAndTimesList.map((dayAndTime) => {
+                {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => {
                     return (
-                        <StyledItem>
+                        <StyledItem key={index}>
                             <StyledSpanContent>
                                 {dayAndTime}
                             </StyledSpanContent>

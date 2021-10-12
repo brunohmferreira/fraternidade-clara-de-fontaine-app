@@ -25,8 +25,8 @@ const ContentSection = () => {
                     autodestruição. </p>
                 <p> Tenta dar ao educando as possibilidades de encarar a vida, o mundo e
                     as pessoas de maneira mais espiritualizada e menos materialista.</p>
-                <p> Como lema da Casa Espírita <Bold>"fora da caridade não há salvação"</Bold> 
-                    mostramos a necessidade da prática do "amor ao próximo" ensinado pelo Cristo,
+                <p> Como lema da Casa Espírita <Bold>&quot;fora da caridade não há salvação&quot; </Bold> 
+                    mostramos a necessidade da prática do &quot;amor ao próximo&quot; ensinado pelo Cristo,
                     sendo esta a principal meta de nossa Casa.</p>
             </StyledSpanText>
             <StyledDiv>

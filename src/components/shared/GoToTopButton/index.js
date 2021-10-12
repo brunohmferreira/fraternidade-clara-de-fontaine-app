@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { StyledButton, StyledDiv, StyledIcon, StyledSpan } from './index.style'
 
 const GoToTopButton = () => {
@@ -6,15 +6,26 @@ const GoToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentScroll] = useState(false);
   const [showButtonText, setShowButtonText] = useState(false);
-  
-  useEffect(() => {
-    const onScroll = () => {
-      var changeVisibility = (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1);
-      setIsVisible(changeVisibility);
-    }
 
-    window.addEventListener('scroll', onScroll);
-  }, [currentScroll]);
+  const onScroll = () => {
+    var changeVisibility = (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1);
+    setIsVisible(changeVisibility);
+  }
+  
+  const handleChangeVisibility = useCallback(
+    () => {
+      window.addEventListener('scroll', () => { onScroll(); });
+    },
+    [currentScroll]
+  );
+
+  useEffect(() => {
+    handleChangeVisibility();
+
+    return () => {
+      setIsVisible(false);
+    };
+  }, [handleChangeVisibility]);
 
   const handleButtonClick = () => {
     document.documentElement.scroll({top: 0, left: 0, behavior: 'smooth' });

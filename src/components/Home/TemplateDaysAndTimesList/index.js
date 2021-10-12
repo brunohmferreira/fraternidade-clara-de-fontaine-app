@@ -6,8 +6,8 @@ const TemplateDaysAndTimesList = ({ daysAndTimesList, boldText }) => {
 
     return (
         <>
-        {daysAndTimesList && daysAndTimesList.map((dayAndTime) => {
-            return (boldText ? (<p><Bold>{dayAndTime}</Bold></p>) : (<p>{dayAndTime}</p>))
+        {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => {
+            return (boldText ? (<p key={index}><Bold>{dayAndTime}</Bold></p>) : (<p key={index}>{dayAndTime}</p>))
         })}
         </>
     );

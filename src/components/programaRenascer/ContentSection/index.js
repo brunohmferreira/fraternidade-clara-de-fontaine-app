@@ -108,8 +108,8 @@ const ContentSection = () => {
                   <p> A reforma íntima, portanto, vem do autoconhecimento e da auto-educação. 
                       Ela é resultado de um movimento interno, conscientemente direcionado 
                       para a mudança de hábitos, de pensamentos, de desejos e de sentimentos. 
-                      Logo, o programa não "trata o espírito", pois somente ele próprio pode 
-                      se tratar, provocando em si mesmo esse "movimento", esta ação para a 
+                      Logo, o programa não &quot;trata o espírito&quot;, pois somente ele próprio pode 
+                      se tratar, provocando em si mesmo esse &quot;movimento&quot;, esta ação para a 
                       mudança. </p>
                   <p> O que o programa espírita faz é oferecer subsídios para que o 
                       participante atinja esse estágio de conciência da necessidade da 
@@ -142,7 +142,7 @@ const ContentSection = () => {
             content: (
                 <>
                   <p> Sabemos que a maioria das pessoa não gosta de reuniões. A própria 
-                      palavra "reunião" costuma ser associada a obrigação, o que, para
+                      palavra &quot;reunião&quot; costuma ser associada a obrigação, o que, para
                       nós que sempre buscamos o prazer, soa como tédio ou monotonia. </p>
                   <p> Justamente para evitarmos que nossas reuniões se tornem monótonas 
                       e repetitivas, buscamos variar constantemente a sua temática e, 
@@ -164,7 +164,7 @@ const ContentSection = () => {
                       Interessa-nos somente a cura, a libertação. </p>
                   <p> Há um dia especial para depoimentos. Nesse dia, fala quem quer sobre 
                       o que quiser. Mas o objetivo é o autoconhecimento, não uma espécie 
-                      de "confissão de culpa". </p>
+                      de &quot;confissão de culpa&quot;. </p>
                   <p> Ao falar, o participante tem contato com os seus medos, as suas dúvidas, 
                       vitórias e fracassos. Cada um fala o que quiser. Pode relatar um 
                       problema em casa, o progresso na relação familiar, uma recaída ocorrida 
@@ -190,8 +190,8 @@ const ContentSection = () => {
                       próprio não queira revelar. </p>
                   <p> 4. Nenhum membro do grupo citará o nome de outro membro em seu 
                       depoimento. </p>
-                  <p> 5. Uma máxima do grupo é sempre lembrada: “O que você vê aqui... 
-                      o que você ouve aqui... você deixa aqui". </p>
+                  <p> 5. Uma máxima do grupo é sempre lembrada: &quot;O que você vê aqui... 
+                      o que você ouve aqui... você deixa aqui&quot;. </p>
                   <p> 6. Quem não se sentir à vontade para falar, não será forçado. 
                       Falar ou não é uma decisão de cada um e deverá ser respeitada 
                       pelo grupo. </p>
@@ -250,7 +250,7 @@ const ContentSection = () => {
                     álcool e demais dependências e compulsões. </p>
                 <p> Aberta a todos que necessitem de tal amparo, é realizada uma reunião 
                     semanal, tendo 25 pessoas atendidas em 2015. </p>
-                <p> Lema: <Bold>"Ame a vida, não as drogas!"</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
+                <p> Lema: <Bold>&quot;Ame a vida, não as drogas&quot;</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
             </StyledSpanText>
             <StyledDiv>
                 <StyledSpanTitle>

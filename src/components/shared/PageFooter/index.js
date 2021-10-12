@@ -42,7 +42,7 @@ const PageFooter = () => {
                     <StyledItemGroupColumn style={{ display: 'grid', padding: 0 }}>
                         <Item><StyledSpanTitle>Serviços disponíveis</StyledSpanTitle></Item>
                         {availableServices.map((page) => {
-                            return (<StyledItemButton onClick={() => {handleChangePage(page)}}>{page.name}</StyledItemButton>);
+                            return (<StyledItemButton key={page.id} onClick={() => {handleChangePage(page)}}>{page.name}</StyledItemButton>);
                         })}
                     </StyledItemGroupColumn>
                 </StyledItem>

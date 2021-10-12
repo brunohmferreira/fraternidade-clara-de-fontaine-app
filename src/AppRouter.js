@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Router, Route, Switch } from 'react-router-dom';
 import { configureEnvironment } from './config/environment';
@@ -43,5 +44,13 @@ const AppRouter = ({ updateEnv }) => {
         </Router>
     );
 }
+
+AppRouter.propTypes = {
+    updateEnv: PropTypes.func
+};
+
+AppRouter.defaultProps = {
+    updateEnv: () => {}
+};
 
 export default connect(null, { updateEnv })(AppRouter);
