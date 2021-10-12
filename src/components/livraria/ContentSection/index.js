@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from '../../shared/Carousel';
-import { Wrapper, StyledSpan, StyledDiv } from './index.style';
+import { Wrapper, StyledSpan, StyledDiv, StyledSpanTitle, StyledSpanText, StyledDivContent, Bold, Italic } from './index.style';
 
 const ContentSection = () => {
 
@@ -8,14 +8,64 @@ const ContentSection = () => {
         {
           image: "\\images\\LivrariaImage.png",
           caption: ""
+        },
+        {
+          image: "\\images\\LivrariaImage1.png",
+          caption: ""
+        },
+        {
+          image: "\\images\\LivrariaImage2.png",
+          caption: ""
+        },
+        {
+          image: "\\images\\LivrariaImage3.png",
+          caption: ""
         }
     ];
 
     return (
         <Wrapper>
             <StyledSpan>
-                <p>  </p> 
+                <p> É muito bom ler...O Espiritismo está fundamentado na razão (no raciocínio), 
+                    na lógica, no equilíbrio e no bom senso, sobretudo na raz]ao, de tal mode 
+                    que a leitura e, de preferência, a leitura constante, intensa, constitui 
+                    grande contributo ao seu entendimento, à sua boa compreensão. <Italic>(Artigo 
+                    "A importância da leitura de Antônio Moris Cury")</Italic> </p>
+                <p> O Livro Espírita liberta, consola, ensina, nos faz parar para refletir sobre 
+                    o mais simples acontecimento da nossa vida, levando-nos à verdadeira compreensão 
+                    e a possível modificação. Ler é ser motivado à observação de aspectos da vida 
+                    que antes nos passavam despercebidos.<Italic>(Artigo "Livraria – A importância 
+                    da leitura")</Italic> </p> 
+                <p> A leitura abre a mente, impulsiona os sonhos e alimenta a alma. <Italic>(Érico Teixeira)</Italic> </p>
+                <p> Com base nisso, se faz a livraria da Fraternidade Espírita Clara de Fonataine. 
+                    Acreditamos que a leitura é de extrema importância para o amadurecimento mental e 
+                    espiritual, por isso disonibilizamos obras de autores vistos como referências 
+                    para a doutrina Espírita. </p>
+                <p> <Bold>A livraria dispõe de livros usados com preço acessível e recebe doações de 
+                    livros Espíritas para o nosso acervo onde podemos fazer um maior intercâmbio 
+                    da leitura Espírita!!!</Bold> </p>
             </StyledSpan>
+            <StyledDiv>
+                <StyledSpanTitle>
+                    Autores das obras disponíveis
+                </StyledSpanTitle>
+                <StyledDivContent>
+                    <StyledSpanText>
+                        <p> A nossa livraria espirita  conta com vários autores como: </p>
+                        <p> Yvone A. Pereira  </p>
+                        <p> Richard Simonetti </p>
+                        <p> Francisco  Xavier </p>
+                        <p> João Nunes Maia </p>
+                        <p> Zidane Gama </p>
+                        <p> Manoel Philomeno </p>
+                        <p> Patrícia </p>
+                        <p> J.WRochester </p>
+                        <p> Divaldo Franco </p>
+                        <p> Obras infantis: Evangelhos, Espiritimo para crianças, 
+                            colorindo o Evangelho, etc. </p>
+                    </StyledSpanText>
+                </StyledDivContent>
+            </StyledDiv>
             <StyledDiv>
                 <Carousel data={images} />
             </StyledDiv>

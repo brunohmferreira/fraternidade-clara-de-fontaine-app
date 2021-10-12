@@ -43,10 +43,10 @@ const ContentSection = () => {
                             qualquer espécie de pagamento, sob qualquer forma.  </p>
                         <p> A Entidade não distribui resultados, dividendos, bonificações, 
                             participações ou parcelas de seu patrimônio, sob nenhuma forma 
-                            ou pretexto.
+                            ou pretexto. </p>
                         <p> A Sociedade é mantida exclusivamente por doações espontâneas provindas 
                             de seus administradores e tarefeiros voluntários e eventuais promoções 
-                            para tal fim. </p> </p>
+                            para tal fim. </p> 
                     </StyledSpanText>
                 </StyledDivContent>
             </StyledDiv>

@@ -21,6 +21,7 @@ export const StyledItem = styled(Item)`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 `;
 
 export const StyledSpanTitle = styled.span`

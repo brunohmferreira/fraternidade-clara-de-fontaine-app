@@ -30,7 +30,8 @@ const GoToTopButton = () => {
       onMouseOver={() => handleMouseOver(true)} 
       onMouseLeave={() => handleMouseOver(false)}
       onClick={() => handleButtonClick()} 
-      style={{ display : isVisible ? 'flex' : 'none' }}>
+      isVisible={isVisible}
+    >
       <StyledDiv>
         {showButtonText && (<StyledSpan>VOLTAR AO TOPO</StyledSpan>)}
         <StyledIcon

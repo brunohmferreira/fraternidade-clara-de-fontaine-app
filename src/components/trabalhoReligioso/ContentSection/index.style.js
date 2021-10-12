@@ -14,7 +14,7 @@ export const StyledSpanTitle = styled.span`
     font-size: 20px;
     color: var(--color-secondary);
     text-align: justify;
-    margin: 5% !important;
+    font-weight: bold;
 `;
 
 export const Bold = styled.span`
@@ -23,6 +23,8 @@ export const Bold = styled.span`
 
 export const StyledDiv = styled.div`
     margin: 5% 0% 0% 0%;
+    width: 100%;
+    height: min-content;
 `;
 
 export const StyledDivContent = styled.div`

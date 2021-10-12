@@ -11,7 +11,7 @@ const Carousel = ({ data }) => {
             data={data}
             time={carouselTime}
             width="100%"
-            height="500px"
+            height="min-content"
             radius="8px"
             slideNumber
             slideNumberStyle={{ fontSize: '16px' }}

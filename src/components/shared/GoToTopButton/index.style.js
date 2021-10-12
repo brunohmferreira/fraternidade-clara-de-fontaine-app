@@ -22,6 +22,12 @@ export const StyledButton = styled.button`
   align-items: center;
   text-transform: uppercase;
 
+  ${props => props.isVisible ? ` 
+    display: flex;
+  ` : `
+    display: none;
+  `}
+
   &:hover {
     opacity: 1;
     width: 170px;

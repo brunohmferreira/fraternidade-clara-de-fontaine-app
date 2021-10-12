@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, StyledSpanText, StyledSpanTitle, StyledDiv, StyledDivContent, Bold } from './index.style';
+import { Wrapper, StyledSpanText, StyledSpanTitle, StyledDiv, StyledDivContent, Bold, Italic } from './index.style';
 import Accordion from '../../shared/Accordion';
 import Carousel from '../../shared/Carousel';
 
@@ -250,7 +250,7 @@ const ContentSection = () => {
                     álcool e demais dependências e compulsões. </p>
                 <p> Aberta a todos que necessitem de tal amparo, é realizada uma reunião 
                     semanal, tendo 25 pessoas atendidas em 2015. </p>
-                <p> Lema: <Bold>"Ame a vida, não as drogas!"</Bold> (Luiz Antônio - espírito) </p>
+                <p> Lema: <Bold>"Ame a vida, não as drogas!"</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
             </StyledSpanText>
             <StyledDiv>
                 <StyledSpanTitle>
@@ -261,14 +261,14 @@ const ContentSection = () => {
                         <p> Composto de 14 passos/módulos subdivididos originalmente em 188 reuniões 
                             -  há necessidade de participar das reuniões (atualmente online). </p>
                         <p> O vício é a manifestação externa da dependência espiritual. </p>
-                        <p> O objetivo é a libertação da dependência espiritual </p>
-                        <p> Fundamental a vontade de mudar </p>
-                        <p> Considerar um tratamento mínimo de dois anos </p>
+                        <p> O objetivo é a libertação da dependência espiritual. </p>
+                        <p> Fundamental a vontade de mudar. </p>
+                        <p> Considerar um tratamento mínimo de dois anos. </p>
                         <p> Plano 24 horas: estabelecer compromisso consigo mesmo de evitar o uso do 
                             produto de dependência e também daquele causador dos vícios morais, por 24 
-                            horas, assim vencendo sempre a cada dia </p>
+                            horas, assim vencendo sempre a cada dia. </p>
                         <p> Reforma íntima: processo de autoconhecimento para mudar nossa estrutura de 
-                            pensamento </p>
+                            pensamento. </p>
                     </StyledSpanText>
                 </StyledDivContent>
             </StyledDiv>

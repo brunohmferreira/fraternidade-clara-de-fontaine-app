@@ -13,5 +13,5 @@ export const StyledSpan = styled.span`
 export const StyledDiv = styled.div`
     margin: 5% 0%;
     width: 100%;
-    height: 550px;
+    height: min-content;
 `;

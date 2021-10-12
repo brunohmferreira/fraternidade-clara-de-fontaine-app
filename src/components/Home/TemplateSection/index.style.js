@@ -22,7 +22,7 @@ export const StyledImage = styled(Image)`
 `;
 
 export const StyledLeftDiv = styled.div`
-    height: 100%;
+    height: min-content;
     width: 50%;
     left: 0;
     z-index: 0;
@@ -40,7 +40,7 @@ export const StyledLeftDiv = styled.div`
 `;
 
 export const StyledRightDiv = styled.div`
-    height: 100%;
+    height: min-content;
     width: 50%;
     right: 0;
     z-index: 0;
