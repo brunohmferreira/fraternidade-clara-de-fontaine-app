@@ -17,7 +17,7 @@ const PageFooter = () => {
 
     const handleAddressClick = () => {
         window.open(request().env.GOOGLE_MAPS_URL, '_blank');
-    }
+    };
 
     return (
         <Wrapper>
@@ -56,6 +56,6 @@ const PageFooter = () => {
             </StyledItemGroup>
         </Wrapper>
     );
-}
+};
 
 export default PageFooter;

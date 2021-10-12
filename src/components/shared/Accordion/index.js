@@ -10,7 +10,7 @@ const Accordion = ({ listOfItems, defaultActiveItemIndex }) => {
     const handleClick = (itemKey) => {
         let selectedItem = activeItemIndex === itemKey ? -1 : itemKey;
         setActiveItemIndex(selectedItem);
-    }
+    };
 
     return (
         <AccordionSemantic>

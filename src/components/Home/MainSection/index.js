@@ -6,17 +6,17 @@ import ChangePageContext from '../../../store/contexts/home/changePageContext';
 
 const MainSection = () => {
 
-    const handleChangePage = useContext(ChangePageContext); 
+    const handleChangePage = useContext(ChangePageContext);
 
     return (
         <>
-        <StyledBackgroundImage src='\images\SunflowersBackground.png' />
-        <StyledDivTitle>
-            <LogoAndName showName />
-        </StyledDivTitle>
-        <StyledDivButton>
-            <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO' onClick={() => handleChangePage(Pages.TrabalhoReligioso)} />
-        </StyledDivButton>
+            <StyledBackgroundImage src='\images\SunflowersBackground.png' />
+            <StyledDivTitle>
+                <LogoAndName showName />
+            </StyledDivTitle>
+            <StyledDivButton>
+                <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO' onClick={() => handleChangePage(Pages.TrabalhoReligioso)} />
+            </StyledDivButton>
         </>
     );
 };

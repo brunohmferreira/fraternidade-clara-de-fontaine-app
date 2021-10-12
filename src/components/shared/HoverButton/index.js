@@ -9,11 +9,11 @@ const HoverButton = ({ name, urlLink, iconName, colorName }) => {
 
     const handleButtonClick = () => {
         window.open(`${urlLink}`, '_blank');
-    }
+    };
 
     const handleMouseOver = (showText) => {
         setTimeout(() => setShowButtonText(showText), 100);
-    }
+    };
 
     return (
         <StyledButton

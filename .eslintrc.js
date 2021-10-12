@@ -207,7 +207,7 @@ module.exports = {
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "error",
-        "quote-props": ["error", "never"],
+        "quote-props": ["error", "consistent"],
         "quotes": "off",
         "radix": "error",
         "require-atomic-updates": "error",
@@ -235,6 +235,6 @@ module.exports = {
         "wrap-iife": "error",
         "wrap-regex": "error",
         "yield-star-spacing": "error",
-        "yoda": ["error","never"]
+        "yoda": ["error", "never"]
     }
 };

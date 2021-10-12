@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { StyledButton, StyledDiv, StyledIcon, StyledSpan } from './index.style'
+import { StyledButton, StyledDiv, StyledIcon, StyledSpan } from './index.style';
 
 const GoToTopButton = () => {
 
@@ -10,7 +10,7 @@ const GoToTopButton = () => {
     const onScroll = () => {
         let changeVisibility = (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1);
         setIsVisible(changeVisibility);
-    }
+    };
 
     const handleChangeVisibility = useCallback(
         () => {
@@ -30,11 +30,11 @@ const GoToTopButton = () => {
     const handleButtonClick = () => {
         document.documentElement.scroll({top: 0, left: 0, behavior: 'smooth' });
         document.body.scroll({top: 0, left: 0, behavior: 'smooth' });
-    }
+    };
 
     const handleMouseOver = (showText) => {
         setTimeout(() => setShowButtonText(showText), 100);
-    }
+    };
 
     return (
         <StyledButton
@@ -49,7 +49,7 @@ const GoToTopButton = () => {
             </StyledDiv>
         </StyledButton>
     );
-}
+};
 
 export default GoToTopButton;
 

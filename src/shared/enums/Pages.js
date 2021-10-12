@@ -65,4 +65,4 @@ export const Pages = {
         path: 'livraria',
         daysAndTimes: ['Segunda-feira de 20:00 às 21:00']
     }
-}
+};

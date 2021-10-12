@@ -34,7 +34,7 @@ const ContentSection = () => {
                 <p> &quot;O Livro Espírita liberta, consola, ensina, nos faz parar para refletir sobre
                     o mais simples acontecimento da nossa vida, levando-nos à verdadeira compreensão
                     e a possível modificação. Ler é ser motivado à observação de aspectos da vida
-                    que antes nos passavam despercebidos&quot;.<Italic>(Artigo &quot;Livraria – A importância
+                    que antes nos passavam despercebidos&quot;.<Italic> (Artigo &quot;Livraria – A importância
                     da leitura&quot;)</Italic> </p>
                 <p> &quot;A leitura abre a mente, impulsiona os sonhos e alimenta a alma&quot;. <Italic>(Érico Teixeira)</Italic> </p>
                 <p> Com base nisso, se faz a livraria da Fraternidade Espírita Clara de Fonataine.

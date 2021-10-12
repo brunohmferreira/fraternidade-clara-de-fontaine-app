@@ -19,9 +19,9 @@ import TrabalhoReligiosoPage from './views/TrabalhoReligiosoPage';
 
 const AppRouter = () => {
 
-    //#region environment configurantion
+    //  #region Environment Configurantion
     updateEnv(configureEnvironment());
-    //#endregion
+    //  #endregion
 
     return (
         <Router history={history}>
@@ -42,6 +42,6 @@ const AppRouter = () => {
             </Switch>
         </Router>
     );
-}
+};
 
 export default connect(null, { updateEnv })(AppRouter);

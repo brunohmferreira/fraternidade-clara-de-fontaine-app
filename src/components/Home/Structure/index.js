@@ -52,7 +52,6 @@ const Structure = () => {
                     <LivrariaSection rightImage />
                 </StyledItem>
             </StyledItemGroup>
-            
         </Wrapper>
     );
 };

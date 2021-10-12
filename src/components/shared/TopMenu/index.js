@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledMenu, StyledMenuItem } from './index.style';
 import { Pages } from '../../../shared/enums/Pages';
-import { Menu } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react';
 import LogoAndName from '../LogoAndName';
 
 const TopMenu = ({ activeItem, handleChangePage, showLogo }) => {

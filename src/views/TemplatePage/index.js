@@ -14,11 +14,11 @@ const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [])
+    }, []);
 
     const handleChangePage = (page) => {
         history.push(page.path);
-    }
+    };
 
     return (
         <ChangePageContext.Provider value={handleChangePage}>
