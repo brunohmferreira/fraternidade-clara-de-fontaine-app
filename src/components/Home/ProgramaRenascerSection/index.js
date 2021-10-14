@@ -10,7 +10,7 @@ const ProgramaRenascerSection = ({ rightImage }) => {
     const currentSection = Pages.ProgramaRenascer;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\ProgramaRenascerLogo.png'

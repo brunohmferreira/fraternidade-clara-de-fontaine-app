@@ -9,14 +9,14 @@ const ProgramaRenascerPage = () => {
     const [currentPage] = useState(Pages.ProgramaRenascer);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
-            content={<TemplateStructure 
-                page={currentPage} 
+            content={<TemplateStructure
+                page={currentPage}
                 content={<ContentSection />}
                 showDaysAndTimes
-                daysAndTimesList={currentPage.daysAndTimes} 
+                daysAndTimesList={currentPage.daysAndTimes}
             />}
         />
     );

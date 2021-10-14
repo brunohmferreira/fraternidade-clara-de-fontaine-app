@@ -10,7 +10,7 @@ const RecepcaoEAtendimentoFraternoSection = ({ rightImage }) => {
     const currentSection = Pages.RecepcaoEAtendimentoFraterno;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\AtendimentoFraternoImage.png'

@@ -9,14 +9,14 @@ const RecepcaoEAtendimentoFraterno = () => {
     const [currentPage] = useState(Pages.RecepcaoEAtendimentoFraterno);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
             content={<TemplateStructure
-                page={currentPage} 
+                page={currentPage}
                 content={<ContentSection />}
                 showDaysAndTimes
-                daysAndTimesList={currentPage.daysAndTimes} 
+                daysAndTimesList={currentPage.daysAndTimes}
             />}
         />
     );

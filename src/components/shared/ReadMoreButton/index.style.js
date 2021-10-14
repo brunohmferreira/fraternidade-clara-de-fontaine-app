@@ -11,7 +11,7 @@ export const StyledTextButton = styled.span`
     padding: 4px;
 `;
 
-export const StyledButton  = styled.div`
+export const StyledButton = styled.div`
     position: relative;
     transition: all .5s ease;
     display: flex;

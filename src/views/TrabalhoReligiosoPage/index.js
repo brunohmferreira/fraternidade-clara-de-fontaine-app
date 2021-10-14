@@ -9,12 +9,12 @@ const TrabalhoReligiosoPage = () => {
     const [currentPage] = useState(Pages.TrabalhoReligioso);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
-            content={<TemplateStructure 
-                page={currentPage} 
-                content={<ContentSection />} 
+            content={<TemplateStructure
+                page={currentPage}
+                content={<ContentSection />}
             />}
         />
     );

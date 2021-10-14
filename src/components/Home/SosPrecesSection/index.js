@@ -10,7 +10,7 @@ const SosPrecesSection = ({ rightImage }) => {
     const currentSection = Pages.SosPreces;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\SosPrecesImage.png'
@@ -18,9 +18,9 @@ const SosPrecesSection = ({ rightImage }) => {
             text={
                 <>
                     <p><Italic>- Bem-aventurados os que choram, pois que serão consolados.</Italic></p>
-                    <p><Italic>– Bem-aventurados os famintos e os sequiosos de justiça, pois que serão 
+                    <p><Italic>– Bem-aventurados os famintos e os sequiosos de justiça, pois que serão
                         saciados.</Italic></p>
-                    <p><Italic>– Bem-aventurados os que sofrem perseguição pela justiça, pois que é deles 
+                    <p><Italic>– Bem-aventurados os que sofrem perseguição pela justiça, pois que é deles
                         o reino dos céus.</Italic></p>
                     <p><Author>Mateus, 5:4, 6 e 10</Author></p>
                     <TemplateDaysAndTimesList daysAndTimesList={currentSection.daysAndTimes} boldText />

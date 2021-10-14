@@ -7,7 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 const loggerMiddleware = (store) => {
     if (process.env.NODE_ENV === 'development')
         console.log('Redux state: ', store.getState());
-}
+};
 
 const middleware = store => next => action => {
     loggerMiddleware(store);

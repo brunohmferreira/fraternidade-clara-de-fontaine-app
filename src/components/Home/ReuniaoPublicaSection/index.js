@@ -10,7 +10,7 @@ const ReuniaoPublicaSection = ({ rightImage }) => {
     const currentSection = Pages.ReuniaoPublica;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\ReuniaoPublicaImage.png'

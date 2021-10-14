@@ -10,14 +10,14 @@ const LivrariaSection = ({ rightImage }) => {
     const currentSection = Pages.Livraria;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\LivrariaImage.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>Deus nos concede a cada dia uma página de vida nova no livro 
+                    <p><Italic>Deus nos concede a cada dia uma página de vida nova no livro
                         do tempo. Aquilo que colocarmos nela, corre por nossa conta.</Italic></p>
                     <p><Author>Chico Xavier</Author></p>
                     <p><Bold>Horário de funcionamento:</Bold></p>

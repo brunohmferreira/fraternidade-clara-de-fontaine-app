@@ -9,14 +9,14 @@ const LivrariaPage = () => {
     const [currentPage] = useState(Pages.Livraria);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
-            content={<TemplateStructure 
-                page={currentPage} 
+            content={<TemplateStructure
+                page={currentPage}
                 content={<ContentSection />}
                 showDaysAndTimes
-                daysAndTimesList={currentPage.daysAndTimes} 
+                daysAndTimesList={currentPage.daysAndTimes}
             />}
         />
     );

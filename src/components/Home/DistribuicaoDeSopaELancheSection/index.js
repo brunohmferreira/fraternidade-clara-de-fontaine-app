@@ -10,7 +10,7 @@ const DistribuicaoDeSopaELancheSection = ({ rightImage }) => {
     const currentSection = Pages.DistribuicaoDeSopaELanche;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image=''

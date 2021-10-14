@@ -10,14 +10,14 @@ const EducacaoMediunicaSection = ({ rightImage }) => {
     const currentSection = Pages.EducacaoMediunica;
 
     return (
-        <TemplateSection 
+        <TemplateSection
             rightImage={rightImage}
             section={currentSection}
             image='\images\EducacaoMediunica.png'
             title={currentSection.name}
             text={
                 <>
-                    <p><Italic>A mediunidade é uma coisa sagrada, que deve ser praticada 
+                    <p><Italic>A mediunidade é uma coisa sagrada, que deve ser praticada
                         santamente religiosamente.</Italic></p>
                     <p><Author>Allan Kardec</Author></p>
                     <p><Bold>Horário:</Bold></p>

@@ -9,13 +9,13 @@ const SosPrecesPage = () => {
     const [currentPage] = useState(Pages.SosPreces);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
-            content={<TemplateStructure 
-                page={currentPage} 
+            content={<TemplateStructure
+                page={currentPage}
                 content={<ContentSection />}
-                daysAndTimesList={currentPage.daysAndTimes} 
+                daysAndTimesList={currentPage.daysAndTimes}
             />}
         />
     );

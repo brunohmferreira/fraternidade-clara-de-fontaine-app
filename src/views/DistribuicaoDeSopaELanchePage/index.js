@@ -9,11 +9,11 @@ const DistribuicaoDeSopaELanchePage = () => {
     const [currentPage] = useState(Pages.DistribuicaoDeSopaELanche);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             showLogoOnTopMenu
             currentPage={currentPage}
-            content={<TemplateStructure 
-                page={currentPage} 
+            content={<TemplateStructure
+                page={currentPage}
                 content={<ContentSection />}
             />}
         />

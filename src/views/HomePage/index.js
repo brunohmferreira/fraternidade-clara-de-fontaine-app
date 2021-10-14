@@ -8,7 +8,7 @@ const HomePage = () => {
     const [currentPage] = useState(Pages.Home);
 
     return (
-        <TemplatePage 
+        <TemplatePage
             currentPage={currentPage}
             content={<Structure />}
         />
