@@ -1,50 +1,75 @@
 import styled from 'styled-components';
-import { Item } from 'semantic-ui-react';
 
 export const Wrapper = styled.div`
     width: 100%;
     height: fit-content;
     color: var(--color-white);
     background-color: var(--color-gray);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
     z-index: 0;
 `;
 
-export const Bold = styled.label`
+export const StyledDivFirstRow = styled.div`
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 0;
+`;
+
+export const StyledDivSecondRow = styled.div`
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2;
+    z-index: 0;
+    padding: 16px;
+`;
+
+export const Bold = styled.span`
     font-weight: bold;
 `;
 
-export const StyledItemGroup = styled(Item.Group)`
+export const StyledDivLeftColumn = styled.div`
     width: 100%;
+    grid-column: 1;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 `;
 
-export const StyledItemGroupColumn = styled(Item.Group)`
-    width: 50%;
-    justify-content: center;
-    padding-left: 10%;
-`;
-
-export const StyledItem = styled(Item)`
+export const StyledDivRightColumn = styled.div`
     width: 100%;
-`;
-
-export const StyledItemImage = styled(Item)`
-    margin: 10% !important;
-    cursor: pointer;
-`;
-
-export const StyledItemCentralized = styled(Item)`
+    grid-column: 2;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 1% !important;
 `;
 
-export const StyledItemButton = styled(Item)`
+export const StyledDivLogo = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+`;
+
+export const StyledSpanButton = styled.span`
     cursor: pointer;
     font-size: 14px !important;
-    line-height: 1%;
+    line-height: 30px;
 
     &:hover {
         font-weight: bold;
@@ -54,6 +79,10 @@ export const StyledItemButton = styled(Item)`
 export const StyledSpan = styled.span`
     font-size: 20px;
     line-height: 30px;
+    margin: 16px 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
     ${props => props.clickable && `
         cursor: pointer;
@@ -67,8 +96,9 @@ export const StyledSpan = styled.span`
 `;
 
 export const StyledSpanTitle = styled.span`
-    text-shadow: var(--black-stroke); 
+    text-shadow: var(--black-stroke-dp2); 
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+    margin: 8px;
 `;

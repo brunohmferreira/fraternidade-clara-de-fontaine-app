@@ -1,10 +1,12 @@
 import styled from 'styled-components';
-import { Image, Item } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 
 export const Wrapper = styled.div`
     padding: 0;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     min-height: 300px;
     max-height: 800px;
 
@@ -17,22 +19,25 @@ export const Wrapper = styled.div`
 
 export const StyledImage = styled(Image)`
     width: 100%;
+    height: 100%;
     z-index: 0;
     padding: 0;
 `;
 
 export const StyledLeftDiv = styled.div`
+    grid-column: 1;
+    width: 100%;
     height: min-content;
-    width: 50%;
     left: 0;
     z-index: 0;
     position: relative;
     display: flex;
+    flex-direction: column;
 
     ${props => props.center ? `
         justify-content: center;
         align-items: center;
-        padding: 5%;
+        padding: 10% 5%;
     ` : `
         justify-content: left;
         align-items: left;
@@ -40,17 +45,19 @@ export const StyledLeftDiv = styled.div`
 `;
 
 export const StyledRightDiv = styled.div`
+    grid-column: 2;
+    width: 100%;
     height: min-content;
-    width: 50%;
     right: 0;
     z-index: 0;
     position: relative;
     display: flex;
+    flex-direction: column;
     
     ${props => props.center ? `
         justify-content: center;
         align-items: center;
-        padding: 5%;
+        padding: 10% 5%;
     ` : `
         justify-content: right;
         align-items: right;
@@ -75,12 +82,4 @@ export const StyledTextSpan = styled.span`
     text-align: justify;
     line-height: 30px;
     margin-bottom: 10%;
-`;
-
-export const StyledItemTitle = styled(Item)`
-    display: block !important;
-`;
-
-export const StyledItemText = styled(Item)`
-    margin: 0 !important;
 `;

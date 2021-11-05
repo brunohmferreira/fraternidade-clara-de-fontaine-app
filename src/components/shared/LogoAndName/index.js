@@ -1,26 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Item } from 'semantic-ui-react';
-import { StyledSpan, StyledItem, StyledImage } from './index.style';
+import { StyledDiv, StyledDivName, StyledDivLogo, StyledSpan, StyledDivRow, StyledImage } from './index.style';
 
 const LogoAndName = ({ showName, nameFontSize, imageWidth, imageHeight }) => {
 
     return (
-        <>
-            <StyledImage imagewidth={imageWidth} imageheight={imageHeight} src='\images\SimpleLogo.png' />
-            {showName && <Item.Group>
-                <StyledItem>
-                    <Item.Content >
-                        <StyledSpan nameFontSize={nameFontSize}>FRATERNIDADE ESPÍRITA</StyledSpan>
-                    </Item.Content>
-                </StyledItem>
-                <Item>
-                    <Item.Content verticalAlign='middle'>
-                        <StyledSpan nameFontSize={nameFontSize}>CLARA DE FONTAINE</StyledSpan>
-                    </Item.Content>
-                </Item>
-            </Item.Group>}
-        </>
+        <StyledDiv singleColumn={!showName}>
+            <StyledDivLogo>
+                <StyledImage imagewidth={imageWidth} imageheight={imageHeight} src='\images\SimpleLogo.png' />
+            </StyledDivLogo>
+            {showName && <StyledDivName>
+                <StyledDivRow row={1}>
+                    <StyledSpan nameFontSize={nameFontSize}>FRATERNIDADE ESPÍRITA</StyledSpan>
+                </StyledDivRow>
+                <StyledDivRow row={2}>
+                    <StyledSpan nameFontSize={nameFontSize}>CLARA DE FONTAINE</StyledSpan>
+                </StyledDivRow>
+            </StyledDivName>}
+        </StyledDiv>
     );
 };
 

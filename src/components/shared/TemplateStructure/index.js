@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledItem, StyledItemGroup, Wrapper } from './index.style';
+import { StyledDivMainRow, StyledDivContentRow, Wrapper } from './index.style';
 import TemplateMainSection from '../../shared/TemplateMainSection';
 import { Pages } from '../../../shared/enums/Pages';
 
@@ -8,19 +8,17 @@ const TemplateStructure = ({ page, imageSource, content, showDaysAndTimes, daysA
 
     return (
         <Wrapper>
-            <StyledItemGroup>
-                <StyledItem id={0}>
-                    <TemplateMainSection
-                        title={page.name}
-                        imageSource={imageSource}
-                        showDaysAndTimes={showDaysAndTimes}
-                        daysAndTimesList={daysAndTimesList}
-                    />
-                </StyledItem>
-                <StyledItem id={page.id}>
-                    {content}
-                </StyledItem>
-            </StyledItemGroup>
+            <StyledDivMainRow key={0}>
+                <TemplateMainSection
+                    title={page.name}
+                    imageSource={imageSource}
+                    showDaysAndTimes={showDaysAndTimes}
+                    daysAndTimesList={daysAndTimesList}
+                />
+            </StyledDivMainRow>
+            <StyledDivContentRow key={page.id}>
+                {content}
+            </StyledDivContentRow>
         </Wrapper>
     );
 };

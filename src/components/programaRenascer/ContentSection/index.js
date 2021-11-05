@@ -27,7 +27,7 @@ const ContentSection = () => {
             content: (
                 <>
                     <p> Podem participar do grupo pessoas de ambos os sexos, de qualquer idade,
-                      de qualquer raça, condição social crença religiosa cu política, etc. </p>
+                      de qualquer raça, condição social crença religiosa ou política, etc. </p>
                     <p> Não há restrições quanto ao aspecto físico ou condição de saúde do
                       participante, porém todos devem se enquadrar nos critérios de
                       admissão. </p>

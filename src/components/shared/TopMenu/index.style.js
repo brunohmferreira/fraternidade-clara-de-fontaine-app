@@ -23,6 +23,7 @@ export const StyledMenuItem = styled(Menu.Item)`
         border-bottom: 4px solid var(--color-secondary) !important;
         color: var(--color-secondary) !important;
         box-shadow: var(--shadow-dp3) !important;
+        text-shadow: var(--black-stroke-dp1);
     `}
 
     &:hover {

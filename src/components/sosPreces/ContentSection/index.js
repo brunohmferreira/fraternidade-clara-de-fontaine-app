@@ -8,6 +8,18 @@ const ContentSection = () => {
         {
             image: "\\images\\SosPrecesImage.png",
             caption: ""
+        },
+        {
+            image: "\\images\\SosPrecesImage1.png",
+            caption: ""
+        },
+        {
+            image: "\\images\\SosPrecesImage2.png",
+            caption: ""
+        },
+        {
+            image: "\\images\\SosPrecesImage3.png",
+            caption: ""
         }
     ];
 

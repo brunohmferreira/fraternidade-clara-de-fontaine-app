@@ -24,6 +24,14 @@ const ContentSection = () => {
         {
             image: "\\images\\EvangelizacaoInfantilImage5.png",
             caption: ""
+        },
+        {
+            image: "\\images\\EvangelizacaoInfantilImage6.png",
+            caption: ""
+        },
+        {
+            image: "\\images\\EvangelizacaoInfantilImage7.png",
+            caption: ""
         }
     ];
 

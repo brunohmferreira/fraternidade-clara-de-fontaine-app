@@ -161,7 +161,7 @@ module.exports = {
         "no-script-url": "error",
         "no-self-compare": "error",
         "no-sequences": "error",
-        "no-shadow": ["error", { "hoist": "functions" }],
+        "no-shadow": "off",
         "no-tabs": "error",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",

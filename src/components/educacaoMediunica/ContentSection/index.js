@@ -1,7 +1,15 @@
 import React from 'react';
-import { Wrapper, StyledSpan, Bold } from './index.style';
+import Carousel from '../../shared/Carousel';
+import { Wrapper, StyledDiv, StyledSpan, Bold } from './index.style';
 
 const ContentSection = () => {
+
+    const images = [
+        {
+            image: "\\images\\EducacaoMediunicaImage.png",
+            caption: ""
+        }
+    ];
 
     return (
         <Wrapper>
@@ -14,8 +22,11 @@ const ContentSection = () => {
                     e preparo para desenvolver a caridade própria de sua utilização.
                     Tem por base os ensinamentos do educador Allan Kardec e no evangelho
                     de Jesus. </p>
-                <p> Tem por lema o <Bold>&quot;dai e graça o que de graça recebestes&quot;</Bold>. </p>
+                <p> Tem por lema o <Bold>&quot;dai de graça o que de graça recebestes&quot;</Bold>. </p>
             </StyledSpan>
+            <StyledDiv>
+                <Carousel data={images} />
+            </StyledDiv>
         </Wrapper>
     );
 };

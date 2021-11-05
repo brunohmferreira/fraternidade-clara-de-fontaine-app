@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledDivTitle, StyledItem, StyledBackgroundImage,
+import { StyledDivTitle, StyledDivRow, StyledBackgroundImage,
     StyledSpanTitle, StyledSpanSubtitle, StyledSpanContent } from './index.style';
-import { Item } from 'semantic-ui-react';
 
 const TemplateMainSection = ({ title, imageSource, showDaysAndTimes, daysAndTimesList }) => {
 
@@ -10,25 +9,25 @@ const TemplateMainSection = ({ title, imageSource, showDaysAndTimes, daysAndTime
         <>
             <StyledBackgroundImage src={imageSource} />
             <StyledDivTitle>
-                <Item.Group>
-                    <StyledItem>
-                        <StyledSpanTitle>
-                            {(title || '').toUpperCase()}
-                        </StyledSpanTitle>
-                    </StyledItem>
-                    {showDaysAndTimes && <StyledItem>
+                <StyledDivRow row={1}>
+                    <StyledSpanTitle>
+                        {(title || '').toUpperCase()}
+                    </StyledSpanTitle>
+                </StyledDivRow>
+                <StyledDivRow row={2} margin='8px'>
+                    {showDaysAndTimes &&
                         <StyledSpanSubtitle>
                             {daysAndTimesList.length > 1 ? 'Horários:' : 'Horário:'}
                         </StyledSpanSubtitle>
-                    </StyledItem>}
-                    {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => (
-                        <StyledItem key={index}>
-                            <StyledSpanContent>
-                                {dayAndTime}
-                            </StyledSpanContent>
-                        </StyledItem>
-                    ))}
-                </Item.Group>
+                    }
+                </StyledDivRow>
+                {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => (
+                    <StyledDivRow row={index + 3} key={index} margin='8px'>
+                        <StyledSpanContent>
+                            {dayAndTime}
+                        </StyledSpanContent>
+                    </StyledDivRow>
+                ))}
             </StyledDivTitle>
         </>
     );

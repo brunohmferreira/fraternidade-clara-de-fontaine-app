@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Router, Route, Switch } from 'react-router-dom';
 import { configureEnvironment } from './config/environment';
+import { updateEnv } from './store/actions/env';
 import history from './config/history';
 import { Pages } from './shared/enums/Pages';
-import { updateEnv } from './store/actions/env';
 import CampanhaDoQuiloEDoacaoDeCestasBasicasPage from './views/CampanhaDoQuiloEDoacaoDeCestasBasicasPage';
 import DistribuicaoDeSopaELanchePage from './views/DistribuicaoDeSopaELanchePage';
 import EducacaoMediunicaPage from './views/EducacaoMediunicaPage';
@@ -17,7 +18,7 @@ import ReuniaoPublicaPage from './views/ReuniaoPublicaPage';
 import SosPrecesPage from './views/SosPrecesPage';
 import TrabalhoReligiosoPage from './views/TrabalhoReligiosoPage';
 
-const AppRouter = () => {
+const AppRouter = ({ updateEnv }) => {
 
     //  #region Environment Configurantion
     updateEnv(configureEnvironment());
@@ -42,6 +43,14 @@ const AppRouter = () => {
             </Switch>
         </Router>
     );
+};
+
+AppRouter.propTypes = {
+    updateEnv: PropTypes.func
+};
+
+AppRouter.defaultProps = {
+    updateEnv: () => {}
 };
 
 export default connect(null, { updateEnv })(AppRouter);

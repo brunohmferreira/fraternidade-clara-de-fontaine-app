@@ -13,7 +13,7 @@ const EvangelizacaoInfantilSection = ({ rightImage }) => {
         <TemplateSection
             rightImage={rightImage}
             section={currentSection}
-            image='\images\EvangelizacaoInfantilImage.png'
+            image='\images\LivrariaImage.png'
             title={currentSection.name}
             text={
                 <>

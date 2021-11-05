@@ -12,6 +12,10 @@ const ContentSection = () => {
         {
             image: "\\images\\Facade.png",
             caption: ""
+        },
+        {
+            image: "\\images\\TrabalhoReligiosoImage.png",
+            caption: ""
         }
     ];
 

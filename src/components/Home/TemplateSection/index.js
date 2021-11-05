@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledTextSpan,
-    StyledItemText, Wrapper, StyledItemTitle } from './index.style';
-import { Item } from 'semantic-ui-react';
+import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledTextSpan, Wrapper } from './index.style';
 import { Pages } from '../../../shared/enums/Pages';
 import ReadMoreButton from '../../shared/ReadMoreButton';
 import ChangePageContext from '../../../store/contexts/home/changePageContext';
@@ -18,21 +16,16 @@ const TemplateSection = ({ section, image, title, text, rightImage }) => {
     );
 
     const TextSection = () => (
-        <Item.Group>
-            {title && <StyledItemTitle>
-                <StyledTitleSpan>
-                    {title}
-                </StyledTitleSpan>
-            </StyledItemTitle>}
-            {text && <StyledItemText>
-                <StyledTextSpan>
-                    {text}
-                </StyledTextSpan>
-            </StyledItemText>}
-            {section && <StyledItemText>
-                <ReadMoreButton handleButtonClick={handleChangePage} pageToOpen={section} />
-            </StyledItemText>}
-        </Item.Group>
+        <>
+            {title && <StyledTitleSpan>
+                {title}
+            </StyledTitleSpan>}
+            {text && <StyledTextSpan>
+                {text}
+            </StyledTextSpan>}
+            {section &&
+                <ReadMoreButton handleButtonClick={handleChangePage} pageToOpen={section} />}
+        </>
     );
 
     return (

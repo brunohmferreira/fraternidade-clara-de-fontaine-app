@@ -2,7 +2,8 @@ import store from '../store';
 
 export const request = () => {
 
-    return {
+    var xxx = {
         env: store.getState().env
     };
+    return xxx;
 };

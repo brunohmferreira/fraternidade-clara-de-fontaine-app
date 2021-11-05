@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledItem, StyledItemGroup, Wrapper } from './index.style';
+import { StyledDiv, Wrapper } from './index.style';
 import MainSection from '../MainSection';
 import TrabalhoReligiosoSection from '../TrabalhoReligiosoSection';
 import ReuniaoPublicaSection from '../ReuniaoPublicaSection';
@@ -15,43 +15,62 @@ import { Pages } from '../../../shared/enums/Pages';
 
 const Structure = () => {
 
+    const sections = [
+        {
+            id: 0,
+            content: <MainSection />
+        },
+        {
+            id: Pages.TrabalhoReligioso.id,
+            content: <TrabalhoReligiosoSection />
+        },
+        {
+            id: Pages.ReuniaoPublica.id,
+            content: <ReuniaoPublicaSection rightImage/>
+        },
+        {
+            id: Pages.RecepcaoEAtendimentoFraterno.id,
+            content: <RecepcaoEAtendimentoFraternoSection />
+        },
+        {
+            id: Pages.SosPreces.id,
+            content: <SosPrecesSection rightImage />
+        },
+        {
+            id: Pages.ProgramaRenascer.id,
+            content: <ProgramaRenascerSection />
+        },
+        {
+            id: Pages.EvangelizacaoInfantil.id,
+            content: <EvangelizacaoInfantilSection rightImage />
+        },
+        {
+            id: Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas.id,
+            content: <CampanhaDoQuiloEDoacaoDeCestasBasicasSection />
+        },
+        {
+            id: Pages.DistribuicaoDeSopaELanche.id,
+            content: <DistribuicaoDeSopaELancheSection rightImage />
+        },
+        {
+            id: Pages.EducacaoMediunica.id,
+            content: <EducacaoMediunicaSection />
+        },
+        {
+            id: Pages.Livraria.id,
+            content: <LivrariaSection rightImage />
+        }
+    ];
+
     return (
         <Wrapper>
-            <StyledItemGroup>
-                <StyledItem id={0}>
-                    <MainSection />
-                </StyledItem>
-                <StyledItem id={Pages.TrabalhoReligioso.id}>
-                    <TrabalhoReligiosoSection />
-                </StyledItem>
-                <StyledItem id={Pages.ReuniaoPublica.id}>
-                    <ReuniaoPublicaSection rightImage/>
-                </StyledItem>
-                <StyledItem id={Pages.RecepcaoEAtendimentoFraterno.id}>
-                    <RecepcaoEAtendimentoFraternoSection />
-                </StyledItem>
-                <StyledItem id={Pages.SosPreces.id}>
-                    <SosPrecesSection rightImage />
-                </StyledItem>
-                <StyledItem id={Pages.ProgramaRenascer.id}>
-                    <ProgramaRenascerSection />
-                </StyledItem>
-                <StyledItem id={Pages.EvangelizacaoInfantil.id}>
-                    <EvangelizacaoInfantilSection rightImage />
-                </StyledItem>
-                <StyledItem id={Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas.id}>
-                    <CampanhaDoQuiloEDoacaoDeCestasBasicasSection />
-                </StyledItem>
-                <StyledItem id={Pages.DistribuicaoDeSopaELanche.id}>
-                    <DistribuicaoDeSopaELancheSection rightImage />
-                </StyledItem>
-                <StyledItem id={Pages.EducacaoMediunica.id}>
-                    <EducacaoMediunicaSection />
-                </StyledItem>
-                <StyledItem id={Pages.Livraria.id}>
-                    <LivrariaSection rightImage />
-                </StyledItem>
-            </StyledItemGroup>
+            {sections.map((section) => {
+                return (
+                    <StyledDiv key={section.id}>
+                        {section.content}
+                    </StyledDiv>
+                );
+            })}
         </Wrapper>
     );
 };
