@@ -27,7 +27,7 @@ const PageFooter = () => {
                     </StyledDivLogo>
                     <StyledSpan>
                         <StyledSpanTitle>Telefone: &nbsp;</StyledSpanTitle>
-                        (31) 3334-9700
+                        (31) 3110-1233
                     </StyledSpan>
                     <StyledSpan hoverable clickable onClick={() => handleAddressClick()}>
                         <StyledSpanTitle>Endereço: &nbsp;</StyledSpanTitle >

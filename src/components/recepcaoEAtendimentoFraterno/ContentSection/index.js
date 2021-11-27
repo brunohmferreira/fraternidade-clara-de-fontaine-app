@@ -14,7 +14,6 @@ const ContentSection = () => {
                 <p> Este trabalho se dá tendo como direcionamento a cortesia, boa vontade,
                     respeito e discrição, sem qualquer discriminação de nível cultural, de
                     raça, de condição social, de religião, etc. </p>
-                <p> No ano de 2015 foram realizados 722 atendimentos. </p>
             </StyledSpan>
         </Wrapper>
     );

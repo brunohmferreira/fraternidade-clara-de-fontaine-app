@@ -42,8 +42,6 @@ const ContentSection = () => {
                     ao uso de drogas, tendo por objetivo principal a conscientização e
                     o preparo para a vida de solidariedade e fraternidade, tendo por
                     base os ensinos do Cristo, através de seu evangelho. </p>
-                <p> São reuniões semanais que se estendem por todo o ano, tendo a presença
-                    de 40 jovens em 2015. </p>
             </StyledSpan>
             <StyledDiv>
                 <Carousel data={images} />

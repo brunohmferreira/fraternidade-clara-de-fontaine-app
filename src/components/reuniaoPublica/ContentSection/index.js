@@ -6,7 +6,12 @@ const ContentSection = () => {
     return (
         <Wrapper>
             <StyledSpan>
-                <p> </p>
+                <p> As reuniões públicas tem como objetivo trazer detidos nós temas que nos levam a refletir
+                    sobre nossa conduta enquanto encarnados. </p>
+                <p> São temas voltados para a transformação moral cristã do ser. </p>
+                <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
+                    psicografadas por Chico Xavier e outros. </p>
+                <p> As nossas palestras estão disponíveis para visualização em nosso canal do YouTube. </p>
             </StyledSpan>
         </Wrapper>
     );

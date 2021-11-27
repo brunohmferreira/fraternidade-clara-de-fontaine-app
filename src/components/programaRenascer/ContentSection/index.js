@@ -248,7 +248,7 @@ const ContentSection = () => {
                 <p> Este trabalho visa em especial o amparo aos dependentes de drogas,
                     álcool e demais dependências e compulsões. </p>
                 <p> Aberta a todos que necessitem de tal amparo, é realizada uma reunião
-                    semanal, tendo 25 pessoas atendidas em 2015. </p>
+                    semanal. </p>
                 <p> Lema: <Bold>&quot;Ame a vida, não as drogas&quot;</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
             </StyledSpanText>
             <StyledDiv>
