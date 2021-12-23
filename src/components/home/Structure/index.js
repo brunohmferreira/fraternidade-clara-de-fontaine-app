@@ -8,7 +8,6 @@ import SosPrecesSection from '../SosPrecesSection';
 import ProgramaRenascerSection from '../ProgramaRenascerSection';
 import EvangelizacaoInfantilSection from '../EvangelizacaoInfantilSection';
 import CampanhaDoQuiloEDoacaoDeCestasBasicasSection from '../CampanhaDoQuiloEDoacaoDeCestasBasicasSection';
-import DistribuicaoDeSopaELancheSection from '../DistribuicaoDeSopaELancheSection';
 import EducacaoMediunicaSection from '../EducacaoMediunicaSection';
 import LivrariaSection from '../LivrariaSection';
 import { Pages } from '../../../shared/enums/Pages';
@@ -49,16 +48,12 @@ const Structure = () => {
             content: <CampanhaDoQuiloEDoacaoDeCestasBasicasSection />
         },
         {
-            id: Pages.DistribuicaoDeSopaELanche.id,
-            content: <DistribuicaoDeSopaELancheSection rightImage />
-        },
-        {
             id: Pages.EducacaoMediunica.id,
-            content: <EducacaoMediunicaSection />
+            content: <EducacaoMediunicaSection rightImage />
         },
         {
             id: Pages.Livraria.id,
-            content: <LivrariaSection rightImage />
+            content: <LivrariaSection />
         }
     ];
 

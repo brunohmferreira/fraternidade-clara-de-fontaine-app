@@ -1,6 +1,7 @@
 import React from 'react';
+import { Icon } from 'semantic-ui-react';
 import Carousel from '../../shared/Carousel';
-import { Wrapper, StyledDiv, StyledSpan, Bold } from './index.style';
+import { Wrapper, StyledDiv, StyledDivContent, StyledSpanTitle, StyledSpanText, Bold } from './index.style';
 
 const ContentSection = () => {
 
@@ -13,17 +14,30 @@ const ContentSection = () => {
 
     return (
         <Wrapper>
-            <StyledSpan>
-                <p> Sendo nossa instituição uma Casa Espírita, entre seus objetivos
-                    não poderia faltar este trabalho de amparo àqueles que possuem
-                    esta característica natural mas muitas vezes desconhecidas por
-                    aqueles mesmos que a possuem, a mediunidade.  </p>
-                <p> Esta tarefa tem por fim o equilíbrio, conhecimento de sua faculdade
-                    e preparo para desenvolver a caridade própria de sua utilização.
-                    Tem por base os ensinamentos do educador Allan Kardec e no evangelho
-                    de Jesus. </p>
-                <p> Tem por lema o <Bold>&quot;dai de graça o que de graça recebestes&quot;</Bold>. </p>
-            </StyledSpan>
+            <StyledSpanText>
+                <p> Podemos dizer que o objetivo da <Bold>Educação Mediúnica</Bold> na Casa de Clara é o exercício da Mediunidade com
+                    Jesus. Com isso esclarecemos que a Educação Mediúnica é a busca do autodesenvolvimento de valores morais e
+                    conhecimentos para o atingimento deste objetivo. Podemos comparar a Educação Mediúnica à situação de uma pessoa que
+                    concorre ao sorteio de um automóvel e ganha o sorteio. Ao buscar o automóvel, recebe as chaves e não sabe dirigir. Além
+                    de aprender a dirigir, precisa aprender também a ter atitudes moralizadas na condução do automóvel. Ou seja, temos a
+                    condição fisiológica da mediunidade, desenvolvemos esta condição através do exercício da mediunidade, e a educamos
+                    através do autoconhecimento, autotransformação, conhecimentos  e atividades no bem. </p>
+                <p> Temos por lema o <Bold>&quot;dai de graça o que de graça recebestes&quot;</Bold>. </p>
+            </StyledSpanText>
+            <StyledDiv>
+                <StyledSpanTitle>
+                    Dinâmica do estudo
+                </StyledSpanTitle>
+                <StyledDivContent>
+                    <StyledSpanText>
+                        <p> Em um contexto presencial, temos 2 momentos: </p>
+                        <p> <Icon name='bullseye' color='brown' />
+                            Estudo e Prática: O estudo do Evangelho Segundo o Espiritismo/estudo de Livro Mediunidade </p>
+                        <p> <Icon name='bullseye' color='brown' />
+                            Prática mediúnica assistida </p>
+                    </StyledSpanText>
+                </StyledDivContent>
+            </StyledDiv>
             <StyledDiv>
                 <Carousel data={images} />
             </StyledDiv>
