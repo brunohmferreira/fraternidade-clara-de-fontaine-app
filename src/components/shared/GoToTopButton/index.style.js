@@ -6,10 +6,9 @@ export const StyledButton = styled.button`
   height: 40px;
   width: 40px;
   position: fixed;
-  bottom: 10%;
+  bottom: 5%;
   left: 2%;
   z-index: 1;
-  font-size: 12px;
   border: none;
   outline: none;
   background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-hover));
@@ -17,17 +16,27 @@ export const StyledButton = styled.button`
   color: var(--color-secondary-hover);
   cursor: pointer;
   border-radius: 8px;
-  transition: all .1s linear;
+  transition: all .2s linear;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+
+  ${props => props.isVisible ? ` 
+    display: flex;
+  ` : `
+    display: none;
+  `}
 
   &:hover {
     opacity: 1;
     width: 170px;
     display: flex;
     box-shadow: var(--shadow-dp1);
+  }
+
+  &:active {
+    transform: scale(.96);
   }
 `;
 

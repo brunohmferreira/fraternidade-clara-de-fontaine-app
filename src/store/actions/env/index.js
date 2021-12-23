@@ -5,12 +5,12 @@ export function updateEnv(data) {
     return {
         type: UPDATE_ENV,
         payload: data
-    }
+    };
 }
 
 export function resetEnv() {
     return {
         type: RESET_ENV,
         payload: {}
-    }
+    };
 }
