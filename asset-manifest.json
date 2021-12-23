@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css",
-    "main.js": "/fraternidade-clara-de-fontaine-app/static/js/main.bbe93995.chunk.js",
-    "main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/main.bbe93995.chunk.js.map",
-    "runtime-main.js": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.7ce26580.js",
-    "runtime-main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.7ce26580.js.map",
-    "static/css/2.776aa6ba.chunk.css": "/fraternidade-clara-de-fontaine-app/static/css/2.776aa6ba.chunk.css",
-    "static/js/2.c2547df2.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/2.c2547df2.chunk.js",
-    "static/js/2.c2547df2.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/2.c2547df2.chunk.js.map",
-    "static/js/3.72b15bfd.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/3.72b15bfd.chunk.js",
-    "static/js/3.72b15bfd.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/3.72b15bfd.chunk.js.map",
-    "index.html": "/fraternidade-clara-de-fontaine-app/index.html",
-    "static/css/2.776aa6ba.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/2.776aa6ba.chunk.css.map",
-    "static/css/main.c0ed8015.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css.map",
-    "static/js/2.c2547df2.chunk.js.LICENSE.txt": "/fraternidade-clara-de-fontaine-app/static/js/2.c2547df2.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/fraternidade-clara-de-fontaine-app/static/media/outline-icons.ddae9b1b.woff"
+    "main.css": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css",
+    "main.js": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/main.bbe93995.chunk.js",
+    "main.js.map": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/main.bbe93995.chunk.js.map",
+    "runtime-main.js": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/runtime-main.c7d2baca.js",
+    "runtime-main.js.map": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/runtime-main.c7d2baca.js.map",
+    "static/css/2.c32e9110.chunk.css": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/css/2.c32e9110.chunk.css",
+    "static/js/2.068a9ed3.chunk.js": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/2.068a9ed3.chunk.js",
+    "static/js/2.068a9ed3.chunk.js.map": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/2.068a9ed3.chunk.js.map",
+    "static/js/3.72b15bfd.chunk.js": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/3.72b15bfd.chunk.js",
+    "static/js/3.72b15bfd.chunk.js.map": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/3.72b15bfd.chunk.js.map",
+    "index.html": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/index.html",
+    "static/css/2.c32e9110.chunk.css.map": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/css/2.c32e9110.chunk.css.map",
+    "static/css/main.c0ed8015.chunk.css.map": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css.map",
+    "static/js/2.068a9ed3.chunk.js.LICENSE.txt": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/js/2.068a9ed3.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/brunohmferreira/brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ce26580.js",
-    "static/css/2.776aa6ba.chunk.css",
-    "static/js/2.c2547df2.chunk.js",
+    "static/js/runtime-main.c7d2baca.js",
+    "static/css/2.c32e9110.chunk.css",
+    "static/js/2.068a9ed3.chunk.js",
     "static/css/main.c0ed8015.chunk.css",
     "static/js/main.bbe93995.chunk.js"
   ]
