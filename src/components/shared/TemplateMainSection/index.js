@@ -2,33 +2,54 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledDivTitle, StyledDivRow, StyledBackgroundImage,
     StyledSpanTitle, StyledSpanSubtitle, StyledSpanContent } from './index.style';
+import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
+import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
 
 const TemplateMainSection = ({ title, imageSource, showDaysAndTimes, daysAndTimesList }) => {
 
     return (
         <>
-            <StyledBackgroundImage src={imageSource} />
-            <StyledDivTitle>
-                <StyledDivRow row={1}>
-                    <StyledSpanTitle>
-                        {(title || '').toUpperCase()}
-                    </StyledSpanTitle>
-                </StyledDivRow>
-                <StyledDivRow row={2} margin='8px'>
-                    {showDaysAndTimes &&
-                        <StyledSpanSubtitle>
-                            {daysAndTimesList.length > 1 ? 'Horários:' : 'Horário:'}
-                        </StyledSpanSubtitle>
-                    }
-                </StyledDivRow>
-                {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => (
-                    <StyledDivRow row={index + 3} key={index} margin='8px'>
-                        <StyledSpanContent>
-                            {dayAndTime}
-                        </StyledSpanContent>
+            <DesktopOrLaptop>
+                <StyledBackgroundImage src={imageSource} />
+                <StyledDivTitle>
+                    <StyledDivRow row={1}>
+                        <StyledSpanTitle size='48px'>
+                            {(title || '').toUpperCase()}
+                        </StyledSpanTitle>
                     </StyledDivRow>
-                ))}
-            </StyledDivTitle>
+                    <StyledDivRow row={2} margin='8px'>
+                        {showDaysAndTimes &&
+                            <StyledSpanSubtitle>
+                                {daysAndTimesList.length > 1 ? 'Horários:' : 'Horário:'}
+                            </StyledSpanSubtitle>
+                        }
+                    </StyledDivRow>
+                    {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => (
+                        <StyledDivRow row={index + 3} key={index} margin='8px'>
+                            <StyledSpanContent size='22px'>
+                                {dayAndTime}
+                            </StyledSpanContent>
+                        </StyledDivRow>
+                    ))}
+                </StyledDivTitle>
+            </DesktopOrLaptop>
+            <TabletOrMobile>
+                <StyledBackgroundImage src={imageSource} />
+                <StyledDivTitle>
+                    <StyledDivRow row={1}>
+                        <StyledSpanTitle size='20px'>
+                            {(title || '').toUpperCase()}
+                        </StyledSpanTitle>
+                    </StyledDivRow>
+                    {daysAndTimesList && daysAndTimesList.map((dayAndTime, index) => (
+                        <StyledDivRow row={index + 3} key={index} margin='2px'>
+                            <StyledSpanContent size='16px'>
+                                {dayAndTime}
+                            </StyledSpanContent>
+                        </StyledDivRow>
+                    ))}
+                </StyledDivTitle>
+            </TabletOrMobile>
         </>
     );
 };

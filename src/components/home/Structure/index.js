@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledDiv, Wrapper } from './index.style';
+import { StyledDivDesktop, StyledDivMobile, Wrapper } from './index.style';
 import MainSection from '../MainSection';
 import TrabalhoReligiosoSection from '../TrabalhoReligiosoSection';
 import ReuniaoPublicaSection from '../ReuniaoPublicaSection';
@@ -11,6 +11,8 @@ import CampanhaDoQuiloEDoacaoDeCestasBasicasSection from '../CampanhaDoQuiloEDoa
 import EducacaoMediunicaSection from '../EducacaoMediunicaSection';
 import LivrariaSection from '../LivrariaSection';
 import { Pages } from '../../../shared/enums/Pages';
+import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
+import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
 
 const Structure = () => {
 
@@ -61,9 +63,18 @@ const Structure = () => {
         <Wrapper>
             {sections.map((section) => {
                 return (
-                    <StyledDiv key={section.id}>
-                        {section.content}
-                    </StyledDiv>
+                    <>
+                        <DesktopOrLaptop>
+                            <StyledDivDesktop key={section.id}>
+                                {section.content}
+                            </StyledDivDesktop>
+                        </DesktopOrLaptop>
+                        <TabletOrMobile>
+                            <StyledDivMobile key={section.id}>
+                                {section.content}
+                            </StyledDivMobile>
+                        </TabletOrMobile>
+                    </>
                 );
             })}
         </Wrapper>

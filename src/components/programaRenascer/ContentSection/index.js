@@ -1,7 +1,10 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { Wrapper, StyledSpanText, StyledSpanTitle, StyledDiv, StyledDivContent, Bold, Italic } from './index.style';
 import Accordion from '../../shared/Accordion';
 import Carousel from '../../shared/Carousel';
+import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
+import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
 
 const ContentSection = () => {
 
@@ -225,64 +228,118 @@ const ContentSection = () => {
 
     const images = [
         {
-            image: "\\images\\ProgramaRenascerLogo.png",
-            caption: ""
+            image: `${process.env.PUBLIC_URL}\\images\\ProgramaRenascerLogo.png`,
+            caption: ''
         },
         {
-            image: "\\images\\ProgramaRenascerImage1.png",
-            caption: ""
+            image: `${process.env.PUBLIC_URL}\\images\\ProgramaRenascerImage1.png`,
+            caption: ''
         }
     ];
 
     return (
-        <Wrapper>
-            <StyledSpanText>
-                <p> Trabalho voltado aos dependentes e seus familiares que promove a
-                    autotransformação visando a inserção consciente e harmoniosa no
-                    núcleo  familiar e na sociedade. </p>
-                <p> Não tem interesse na transformação religiosa do indivíduo, mas sua
-                    conscientização para seu próprio processo em busca de Deus. São
-                    desenvolvidos estudos e debates ao longo do ano em busca da resolução
-                    das dificuldades com relação a dependência/codependência, a baixa
-                    autoestima, o complexo de inferioridade, sentimentos de culpa, etc. </p>
-                <p> Este trabalho visa em especial o amparo aos dependentes de drogas,
-                    álcool e demais dependências e compulsões. </p>
-                <p> Aberta a todos que necessitem de tal amparo, é realizada uma reunião
-                    semanal. </p>
-                <p> Lema: <Bold>&quot;Ame a vida, não as drogas&quot;</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
-            </StyledSpanText>
-            <StyledDiv>
-                <StyledSpanTitle>
-                    Itens Principais
-                </StyledSpanTitle>
-                <StyledDivContent>
+        <>
+            <DesktopOrLaptop>
+                <Wrapper desktop>
                     <StyledSpanText>
-                        <p> Composto de 14 passos/módulos subdivididos originalmente em 188 reuniões
-                            -  há necessidade de participar das reuniões (atualmente online). </p>
-                        <p> O vício é a manifestação externa da dependência espiritual. </p>
-                        <p> O objetivo é a libertação da dependência espiritual. </p>
-                        <p> Fundamental a vontade de mudar. </p>
-                        <p> Considerar um tratamento mínimo de dois anos. </p>
-                        <p> Plano 24 horas: estabelecer compromisso consigo mesmo de evitar o uso do
-                            produto de dependência e também daquele causador dos vícios morais, por 24
-                            horas, assim vencendo sempre a cada dia. </p>
-                        <p> Reforma íntima: processo de autoconhecimento para mudar nossa estrutura de
-                            pensamento. </p>
+                        <p> Trabalho voltado aos dependentes e seus familiares que promove a
+                            autotransformação visando a inserção consciente e harmoniosa no
+                            núcleo  familiar e na sociedade. </p>
+                        <p> Não tem interesse na transformação religiosa do indivíduo, mas sua
+                            conscientização para seu próprio processo em busca de Deus. São
+                            desenvolvidos estudos e debates ao longo do ano em busca da resolução
+                            das dificuldades com relação a dependência/codependência, a baixa
+                            autoestima, o complexo de inferioridade, sentimentos de culpa, etc. </p>
+                        <p> Este trabalho visa em especial o amparo aos dependentes de drogas,
+                            álcool e demais dependências e compulsões. </p>
+                        <p> Aberta a todos que necessitem de tal amparo, é realizada uma reunião
+                            semanal. </p>
+                        <p> Lema: <Bold>&quot;Ame a vida, não as drogas&quot;</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
                     </StyledSpanText>
-                </StyledDivContent>
-            </StyledDiv>
-            <StyledDiv>
-                <StyledSpanTitle>
-                    Perguntas Frequentes
-                </StyledSpanTitle>
-                <StyledDivContent>
-                    <Accordion listOfItems={questionsAndAnswers} />
-                </StyledDivContent>
-            </StyledDiv>
-            <StyledDiv>
-                <Carousel data={images} />
-            </StyledDiv>
-        </Wrapper>
+                    <StyledDiv>
+                        <StyledSpanTitle>
+                            Itens Principais
+                        </StyledSpanTitle>
+                        <StyledDivContent>
+                            <StyledSpanText>
+                                <p> Composto de 14 passos/módulos subdivididos originalmente em 188 reuniões
+                                    -  há necessidade de participar das reuniões (atualmente online). </p>
+                                <p> O vício é a manifestação externa da dependência espiritual. </p>
+                                <p> O objetivo é a libertação da dependência espiritual. </p>
+                                <p> Fundamental a vontade de mudar. </p>
+                                <p> Considerar um tratamento mínimo de dois anos. </p>
+                                <p> Plano 24 horas: estabelecer compromisso consigo mesmo de evitar o uso do
+                                    produto de dependência e também daquele causador dos vícios morais, por 24
+                                    horas, assim vencendo sempre a cada dia. </p>
+                                <p> Reforma íntima: processo de autoconhecimento para mudar nossa estrutura de
+                                    pensamento. </p>
+                            </StyledSpanText>
+                        </StyledDivContent>
+                    </StyledDiv>
+                    <StyledDiv>
+                        <StyledSpanTitle>
+                            Perguntas Frequentes
+                        </StyledSpanTitle>
+                        <StyledDivContent>
+                            <Accordion listOfItems={questionsAndAnswers} />
+                        </StyledDivContent>
+                    </StyledDiv>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
+                </Wrapper>
+            </DesktopOrLaptop>
+            <TabletOrMobile>
+                <Wrapper>
+                    <StyledSpanText>
+                        <p> Trabalho voltado aos dependentes e seus familiares que promove a
+                            autotransformação visando a inserção consciente e harmoniosa no
+                            núcleo  familiar e na sociedade. </p>
+                        <p> Não tem interesse na transformação religiosa do indivíduo, mas sua
+                            conscientização para seu próprio processo em busca de Deus. São
+                            desenvolvidos estudos e debates ao longo do ano em busca da resolução
+                            das dificuldades com relação a dependência/codependência, a baixa
+                            autoestima, o complexo de inferioridade, sentimentos de culpa, etc. </p>
+                        <p> Este trabalho visa em especial o amparo aos dependentes de drogas,
+                            álcool e demais dependências e compulsões. </p>
+                        <p> Aberta a todos que necessitem de tal amparo, é realizada uma reunião
+                            semanal. </p>
+                        <p> Lema: <Bold>&quot;Ame a vida, não as drogas&quot;</Bold> <Italic>(Luiz Antônio - espírito)</Italic> </p>
+                    </StyledSpanText>
+                    <StyledDiv>
+                        <StyledSpanTitle>
+                            Itens Principais
+                        </StyledSpanTitle>
+                        <StyledDivContent>
+                            <StyledSpanText>
+                                <p> Composto de 14 passos/módulos subdivididos originalmente em 188 reuniões
+                                    -  há necessidade de participar das reuniões (atualmente online). </p>
+                                <p> O vício é a manifestação externa da dependência espiritual. </p>
+                                <p> O objetivo é a libertação da dependência espiritual. </p>
+                                <p> Fundamental a vontade de mudar. </p>
+                                <p> Considerar um tratamento mínimo de dois anos. </p>
+                                <p> Plano 24 horas: estabelecer compromisso consigo mesmo de evitar o uso do
+                                    produto de dependência e também daquele causador dos vícios morais, por 24
+                                    horas, assim vencendo sempre a cada dia. </p>
+                                <p> Reforma íntima: processo de autoconhecimento para mudar nossa estrutura de
+                                    pensamento. </p>
+                            </StyledSpanText>
+                        </StyledDivContent>
+                    </StyledDiv>
+                    <StyledDiv>
+                        <StyledSpanTitle>
+                            Perguntas Frequentes
+                        </StyledSpanTitle>
+                        <StyledDivContent>
+                            <Accordion listOfItems={questionsAndAnswers} />
+                        </StyledDivContent>
+                    </StyledDiv>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
+                </Wrapper>
+            </TabletOrMobile>
+        </>
     );
 };
 

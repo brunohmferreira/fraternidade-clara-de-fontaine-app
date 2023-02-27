@@ -79,7 +79,6 @@ export const StyledSpanButton = styled.span`
 export const StyledSpan = styled.span`
     font-size: 20px;
     line-height: 30px;
-    margin: 16px 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -92,6 +91,12 @@ export const StyledSpan = styled.span`
         &:hover {
             font-weight: bold;
         }
+    `}
+
+    ${props => props.smallMargin ? `
+        margin: 2px 10%;
+    ` : `
+        margin: 16px 10%;
     `}
 `;
 

@@ -7,6 +7,12 @@ export const StyledBackgroundImage = styled(Image)`
     z-index: -1;
 `;
 
+export const StyledImage = styled(Image)`
+    width: 100%;
+    z-index: 0;
+    padding: 0;
+`;
+
 export const StyledDivTitle = styled.div`
     position: absolute !important;
     display: flex;

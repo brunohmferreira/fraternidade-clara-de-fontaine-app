@@ -2,18 +2,24 @@ import styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
 
 export const Wrapper = styled.div`
-    padding: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     min-height: 300px;
     max-height: 800px;
 
-    ${props => props.gradientToLeft ? `
+    ${props => props.gradientToLeft && props.desktop ? `
         background-image: linear-gradient(to left, var(--color-secondary), var(--color-secondary-hover));
     ` : `
         background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary-hover));
+    `}
+
+    ${props => props.desktop ? `
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    ` : `
+        padding: 8px;
+        border-bottom: 1px solid var(--color-primary-hover);
     `}
 `;
 

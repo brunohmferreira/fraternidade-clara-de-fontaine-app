@@ -7,6 +7,9 @@ import { useHistory } from 'react-router-dom';
 import GoToTopButton from '../../components/shared/GoToTopButton';
 import ChangePageContext from '../../store/contexts/home/changePageContext';
 import { Pages } from '../../shared/enums/Pages';
+import DesktopOrLaptop from '../../shared/devices/DesktopOrLaptop';
+import TabletOrMobile from '../../shared/devices/TabletOrMobile';
+import SideMenu from '../../components/shared/SideMenu';
 
 const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 
@@ -22,15 +25,27 @@ const TemplatePage = ({ currentPage, content, showLogoOnTopMenu }) => {
 
     return (
         <ChangePageContext.Provider value={handleChangePage}>
-            <TopMenu
-                showLogo={showLogoOnTopMenu}
-                activeItem={currentPage}
-                handleChangePage={handleChangePage}
-            />
-            {content}
-            <GoToTopButton />
-            <GroupHoverButton />
-            <PageFooter />
+            <DesktopOrLaptop>
+                <TopMenu
+                    showLogo={showLogoOnTopMenu}
+                    activeItem={currentPage}
+                    handleChangePage={handleChangePage}
+                />
+                {content}
+                <GoToTopButton />
+                <GroupHoverButton />
+                <PageFooter />
+            </DesktopOrLaptop>
+            <TabletOrMobile>
+                <SideMenu
+                    showLogo
+                    activeItem={currentPage}
+                    handleChangePage={handleChangePage}
+                >
+                    {content}
+                </SideMenu>
+                <PageFooter />
+            </TabletOrMobile>
         </ChangePageContext.Provider>
     );
 };

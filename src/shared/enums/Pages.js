@@ -27,7 +27,7 @@ export const Pages = {
         id: 4,
         name: 'SOS Preces',
         path: 'sos-preces',
-        daysAndTimes: ['Atendimento diariamente pelo telefone: (31) 3110-1233']
+        daysAndTimes: ['Atendimento diariamente pelo telefone: (31) 3334-9700']
     },
     ProgramaRenascer: {
         id: 5,

@@ -13,7 +13,7 @@ const CampanhaDoQuiloEDoacaoDeCestasBasicasSection = ({ rightImage }) => {
         <TemplateSection
             rightImage={rightImage}
             section={currentSection}
-            image='\images\CampanhaDoQuiloImage.png'
+            image={`${process.env.PUBLIC_URL}\\images\\CampanhaDoQuiloImage.png`}
             title={currentSection.name}
             text={
                 <>

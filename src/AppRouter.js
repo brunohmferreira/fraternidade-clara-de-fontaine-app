@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { configureEnvironment } from './config/environment';
 import { updateEnv } from './store/actions/env';
-import history from './config/history';
 import { Pages } from './shared/enums/Pages';
 import CampanhaDoQuiloEDoacaoDeCestasBasicasPage from './views/CampanhaDoQuiloEDoacaoDeCestasBasicasPage';
 import DistribuicaoDeSopaELanchePage from './views/DistribuicaoDeSopaELanchePage';
@@ -25,7 +24,7 @@ const AppRouter = ({ updateEnv }) => {
     //  #endregion
 
     return (
-        <Router history={history}>
+        <HashRouter>
             <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route path={`/${Pages.TrabalhoReligioso.path}`} component={TrabalhoReligiosoPage} />
@@ -41,7 +40,7 @@ const AppRouter = ({ updateEnv }) => {
 
                 {process.env.NODE_ENV === 'development' && <Route path='/' component={HomePage} />}
             </Switch>
-        </Router>
+        </HashRouter>
     );
 };
 

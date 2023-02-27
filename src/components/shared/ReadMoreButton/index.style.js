@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Icon } from 'semantic-ui-react';
+import { Button, Icon } from 'semantic-ui-react';
 
 export const StyledTextButton = styled.span`
     position: relative;
@@ -42,6 +42,26 @@ export const StyledButton = styled.div`
             opacity: 1;
         }
     }
+
+    &:active {
+        transform: scale(.96);
+    }
+`;
+
+export const StyledSimpleButton = styled(Button)`
+    height: 40px !important;
+    width: 200px !important;
+    justify-self: center !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-dp2) !important;
+    color: var(--color-secondary-hover) !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    background-color: var(--color-primary) !important;
+    background-image: linear-gradient(var(--color-primary), var(--color-primary-hover)) !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 100% !important;
 
     &:active {
         transform: scale(.96);

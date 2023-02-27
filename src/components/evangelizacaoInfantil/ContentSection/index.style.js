@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    padding: 5% 20%;
+    ${props => props.desktop ? `
+        padding: 5% 20%;
+    ` : `
+        padding: 5%;
+    `}
 `;
 
 export const StyledSpan = styled.span`

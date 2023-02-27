@@ -4,6 +4,8 @@ import { StyledImage, StyledLeftDiv, StyledRightDiv, StyledTitleSpan, StyledText
 import { Pages } from '../../../shared/enums/Pages';
 import ReadMoreButton from '../../shared/ReadMoreButton';
 import ChangePageContext from '../../../store/contexts/home/changePageContext';
+import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
+import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
 
 const TemplateSection = ({ section, image, title, text, rightImage }) => {
 
@@ -29,14 +31,23 @@ const TemplateSection = ({ section, image, title, text, rightImage }) => {
     );
 
     return (
-        <Wrapper gradientToLeft={rightImage}>
-            <StyledLeftDiv center={rightImage}>
-                {rightImage ? <TextSection /> : <ImageSection />}
-            </StyledLeftDiv>
-            <StyledRightDiv center={!rightImage}>
-                {rightImage ? <ImageSection /> : <TextSection />}
-            </StyledRightDiv>
-        </Wrapper>
+        <>
+            <DesktopOrLaptop>
+                <Wrapper gradientToLeft={rightImage} desktop>
+                    <StyledLeftDiv center={rightImage}>
+                        {rightImage ? <TextSection /> : <ImageSection />}
+                    </StyledLeftDiv>
+                    <StyledRightDiv center={!rightImage}>
+                        {rightImage ? <ImageSection /> : <TextSection />}
+                    </StyledRightDiv>
+                </Wrapper>
+            </DesktopOrLaptop>
+            <TabletOrMobile>
+                <Wrapper gradientToLeft={rightImage}>
+                    <TextSection />
+                </Wrapper>
+            </TabletOrMobile>
+        </>
     );
 };
 

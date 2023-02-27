@@ -36,12 +36,15 @@ export const StyledDivRow = styled.div`
 `;
 
 export const StyledSpanTitle = styled.span`
-    font-size: 48px;
     line-height: 48px;
     font-weight: bold;
     color: var(--color-white);
     text-shadow: var(--black-stroke-dp2); 
     margin-top: 10%;
+
+    ${props => props.size && ` 
+        font-size: ${props.size};
+    `}
 `;
 
 export const StyledSpanSubtitle = styled.span`
@@ -54,9 +57,12 @@ export const StyledSpanSubtitle = styled.span`
 `;
 
 export const StyledSpanContent = styled.span`
-    font-size: 22px;
     line-height: 22px;
     font-weight: bold;
     color: var(--color-white);
     text-shadow: var(--black-stroke-dp2); 
+
+    ${props => props.size && ` 
+        font-size: ${props.size};
+    `}
 `;

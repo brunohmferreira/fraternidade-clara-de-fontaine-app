@@ -13,7 +13,7 @@ const EducacaoMediunicaSection = ({ rightImage }) => {
         <TemplateSection
             rightImage={rightImage}
             section={currentSection}
-            image='\images\EducacaoMediunicaImage.png'
+            image={`${process.env.PUBLIC_URL}\\images\\EducacaoMediunicaImage.png`}
             title={currentSection.name}
             text={
                 <>

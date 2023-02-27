@@ -18,16 +18,23 @@ export const StyledDivName = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     width: fit-content;
+
+    ${props => props.height && ` 
+        height: 100px;
+    `}
 `;
 
 export const StyledDivRow = styled.div`
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     width: 100%;
 
     ${props => props.row && ` 
          grid-row: ${props.row};
+    `}
+
+    ${props => props.align && ` 
+         align-items: ${props.align};
     `}
 `;
 
