@@ -1,9 +1,21 @@
 import React from 'react';
 import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
 import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
-import { Wrapper, StyledSpan } from './index.style';
+import Carousel from '../../shared/Carousel';
+import { Wrapper, StyledSpan, StyledDiv } from './index.style';
 
 const ContentSection = () => {
+
+    const images = [
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\AtendimentoFraternoImage2.png`,
+            caption: ''
+        },
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\AtendimentoFraternoImage.png`,
+            caption: ''
+        }
+    ];
 
     return (
         <>
@@ -19,6 +31,9 @@ const ContentSection = () => {
                             respeito e discrição, sem qualquer discriminação de nível cultural, de
                             raça, de condição social, de religião, etc. </p>
                     </StyledSpan>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
                 </Wrapper>
             </DesktopOrLaptop>
             <TabletOrMobile>
@@ -33,6 +48,9 @@ const ContentSection = () => {
                             respeito e discrição, sem qualquer discriminação de nível cultural, de
                             raça, de condição social, de religião, etc. </p>
                     </StyledSpan>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
                 </Wrapper>
             </TabletOrMobile>
         </>
