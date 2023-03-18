@@ -20,10 +20,6 @@ const ContentSection = () => {
             caption: ''
         },
         {
-            image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoImage2.png`,
-            caption: ''
-        },
-        {
             image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoImage.png`,
             caption: ''
         }
@@ -34,15 +30,15 @@ const ContentSection = () => {
             <DesktopOrLaptop>
                 <Wrapper desktop>
                     <StyledSpanText>
-                        <p> Como Casa Espírita atua na educação religiosa, ensinando o Evangelho em
+                        <p> Como Casa Espírita, atua na educação religiosa, ensinando o Evangelho em
                             conjunto com a preparação do indivíduo para o enfrentamento das dificuldades
                             da vida, de forma que ele se sinta capaz e motivado a reverter qualquer
                             processo que entenda como negativo, fortalecendo-o contra pensamentos de
                             autodestruição. </p>
                         <p> Tenta dar ao educando as possibilidades de encarar a vida, o mundo e
                             as pessoas de maneira mais espiritualizada e menos materialista.</p>
-                        <p> Como lema da Casa Espírita <Bold>&quot;fora da caridade não há salvação&quot; </Bold>
-                            mostramos a necessidade da prática do &quot;amor ao próximo&quot; ensinado pelo Cristo,
+                        <p> Como lema da Casa Espírita, <Bold>&quot;fora da caridade não há salvação&quot; </Bold>
+                            mostramos a necessidade da prática do amor ao próximo ensinada pelo Cristo,
                             sendo esta a principal meta de nossa Casa.</p>
                     </StyledSpanText>
                     <StyledDiv>
@@ -51,7 +47,7 @@ const ContentSection = () => {
                         </StyledSpanTitle>
                         <StyledDivContent>
                             <StyledSpanText>
-                                <p> A casa oferece, de forma inteiramente gratuita, os seguintes serviços:
+                                <p> A casa oferece os seguintes serviços:
                                     {availableServices.join('; ')}.</p>
                                 <p> Todos os serviços e demais atividades prestados por esta Instituição
                                     são inteiramente gratuitos, não podendo os membros da administração e
@@ -74,14 +70,14 @@ const ContentSection = () => {
             <TabletOrMobile>
                 <Wrapper>
                     <StyledSpanText>
-                        <p> Como Casa Espírita atua na educação religiosa, ensinando o Evangelho em
+                        <p> Como Casa Espírita, atua na educação religiosa, ensinando o Evangelho em
                             conjunto com a preparação do indivíduo para o enfrentamento das dificuldades
                             da vida, de forma que ele se sinta capaz e motivado a reverter qualquer
                             processo que entenda como negativo, fortalecendo-o contra pensamentos de
                             autodestruição. </p>
                         <p> Tenta dar ao educando as possibilidades de encarar a vida, o mundo e
                             as pessoas de maneira mais espiritualizada e menos materialista.</p>
-                        <p> Como lema da Casa Espírita <Bold>&quot;fora da caridade não há salvação&quot; </Bold>
+                        <p> Como lema da Casa Espírita, <Bold>&quot;fora da caridade não há salvação&quot; </Bold>
                             mostramos a necessidade da prática do &quot;amor ao próximo&quot; ensinado pelo Cristo,
                             sendo esta a principal meta de nossa Casa.</p>
                     </StyledSpanText>
@@ -91,7 +87,7 @@ const ContentSection = () => {
                         </StyledSpanTitle>
                         <StyledDivContent>
                             <StyledSpanText>
-                                <p> A casa oferece, de forma inteiramente gratuita, os seguintes serviços:
+                                <p> A casa oferece os seguintes serviços:
                                     {availableServices.join('; ')}.</p>
                                 <p> Todos os serviços e demais atividades prestados por esta Instituição
                                     são inteiramente gratuitos, não podendo os membros da administração e

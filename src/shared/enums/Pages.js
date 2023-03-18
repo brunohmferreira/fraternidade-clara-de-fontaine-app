@@ -15,7 +15,7 @@ export const Pages = {
         id: 2,
         name: 'Reunião Pública',
         path: 'reuniao-publica',
-        daysAndTimes: ['Segunda-feira às 20:00']
+        daysAndTimes: ['Segunda-feira às 20:00', 'Quarta-feira às 20:00']
     },
     RecepcaoEAtendimentoFraterno: {
         id: 3,
@@ -35,24 +35,24 @@ export const Pages = {
         path: 'programa-renascer',
         daysAndTimes: ['Quinta-feira às 20:00']
     },
-    EvangelizacaoInfantil: {
-        id: 6,
-        name: 'Evangelização Infantil',
-        path: 'evangelizacao-infantil',
-        daysAndTimes: ['Segunda-feira às 20:00']
-    },
+    // EvangelizacaoInfantil: {
+    //     id: 6,
+    //     name: 'Evangelização Infantil',
+    //     path: 'evangelizacao-infantil',
+    //     daysAndTimes: ['Segunda-feira às 20:00']
+    // },
     CampanhaDoQuiloEDoacaoDeCestasBasicas: {
         id: 7,
         name: 'Campanha do Quilo',
         path: 'campanha-quilo-doacao-cestas-basicas',
-        daysAndTimes: ['Sábado às 8:45', 'Domingo às 8:45']
+        daysAndTimes: ['Todos os sábados às 8:45', 'Segundo e quarto domingo às 8:45']
     },
-    DistribuicaoDeSopaELanche: {
-        id: 8,
-        name: 'Distribuição de Lanche',
-        path: 'distribuicao-sopa-lanche',
-        daysAndTimes: []
-    },
+    // DistribuicaoDeSopaELanche: {
+    //     id: 8,
+    //     name: 'Distribuição de Lanche',
+    //     path: 'distribuicao-sopa-lanche',
+    //     daysAndTimes: []
+    // },
     EducacaoMediunica: {
         id: 9,
         name: 'Educação Mediúnica',

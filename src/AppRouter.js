@@ -6,9 +6,9 @@ import { configureEnvironment } from './config/environment';
 import { updateEnv } from './store/actions/env';
 import { Pages } from './shared/enums/Pages';
 import CampanhaDoQuiloEDoacaoDeCestasBasicasPage from './views/CampanhaDoQuiloEDoacaoDeCestasBasicasPage';
-import DistribuicaoDeSopaELanchePage from './views/DistribuicaoDeSopaELanchePage';
+// import DistribuicaoDeSopaELanchePage from './views/DistribuicaoDeSopaELanchePage';
 import EducacaoMediunicaPage from './views/EducacaoMediunicaPage';
-import EvangelizacaoInfantilPage from './views/EvangelizacaoInfantilPage';
+// import EvangelizacaoInfantilPage from './views/EvangelizacaoInfantilPage';
 import HomePage from './views/HomePage';
 import LivrariaPage from './views/LivrariaPage';
 import ProgramaRenascerPage from './views/ProgramaRenascerPage';
@@ -32,9 +32,9 @@ const AppRouter = ({ updateEnv }) => {
                 <Route path={`/${Pages.RecepcaoEAtendimentoFraterno.path}`} component={RecepcaoEAtendimentoFraterno} />
                 <Route path={`/${Pages.SosPreces.path}`} component={SosPrecesPage} />
                 <Route path={`/${Pages.ProgramaRenascer.path}`} component={ProgramaRenascerPage} />
-                <Route path={`/${Pages.EvangelizacaoInfantil.path}`} component={EvangelizacaoInfantilPage} />
+                {/* <Route path={`/${Pages.EvangelizacaoInfantil.path}`} component={EvangelizacaoInfantilPage} /> */}
                 <Route path={`/${Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas.path}`} component={CampanhaDoQuiloEDoacaoDeCestasBasicasPage} />
-                <Route path={`/${Pages.DistribuicaoDeSopaELanche.path}`} component={DistribuicaoDeSopaELanchePage} />
+                {/* <Route path={`/${Pages.DistribuicaoDeSopaELanche.path}`} component={DistribuicaoDeSopaELanchePage} /> */}
                 <Route path={`/${Pages.EducacaoMediunica.path}`} component={EducacaoMediunicaPage} />
                 <Route path={`/${Pages.Livraria.path}`} component={LivrariaPage} />
 

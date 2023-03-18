@@ -13,3 +13,9 @@ export const StyledSpan = styled.span`
     color: var(--color-secondary-hover);
     text-align: justify;
 `;
+
+export const StyledDiv = styled.div`
+    margin: 5% 0% 0% 0%;
+    width: 100%;
+    height: min-content;
+`;

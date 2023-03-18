@@ -6,7 +6,7 @@ import ReuniaoPublicaSection from '../ReuniaoPublicaSection';
 import RecepcaoEAtendimentoFraternoSection from '../RecepcaoEAtendimentoFraternoSection';
 import SosPrecesSection from '../SosPrecesSection';
 import ProgramaRenascerSection from '../ProgramaRenascerSection';
-import EvangelizacaoInfantilSection from '../EvangelizacaoInfantilSection';
+// import EvangelizacaoInfantilSection from '../EvangelizacaoInfantilSection';
 import CampanhaDoQuiloEDoacaoDeCestasBasicasSection from '../CampanhaDoQuiloEDoacaoDeCestasBasicasSection';
 import EducacaoMediunicaSection from '../EducacaoMediunicaSection';
 import LivrariaSection from '../LivrariaSection';
@@ -41,21 +41,21 @@ const Structure = () => {
             id: Pages.ProgramaRenascer.id,
             content: <ProgramaRenascerSection />
         },
-        {
-            id: Pages.EvangelizacaoInfantil.id,
-            content: <EvangelizacaoInfantilSection rightImage />
-        },
+        // {
+        //     id: Pages.EvangelizacaoInfantil.id,
+        //     content: <EvangelizacaoInfantilSection rightImage />
+        // },
         {
             id: Pages.CampanhaDoQuiloEDoacaoDeCestasBasicas.id,
-            content: <CampanhaDoQuiloEDoacaoDeCestasBasicasSection />
+            content: <CampanhaDoQuiloEDoacaoDeCestasBasicasSection rightImage />
         },
         {
             id: Pages.EducacaoMediunica.id,
-            content: <EducacaoMediunicaSection rightImage />
+            content: <EducacaoMediunicaSection />
         },
         {
             id: Pages.Livraria.id,
-            content: <LivrariaSection />
+            content: <LivrariaSection rightImage />
         }
     ];
 

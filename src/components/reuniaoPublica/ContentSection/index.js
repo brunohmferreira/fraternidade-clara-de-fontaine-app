@@ -1,9 +1,17 @@
 import React from 'react';
 import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
 import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
-import { Wrapper, StyledSpan } from './index.style';
+import Carousel from '../../shared/Carousel';
+import { Wrapper, StyledSpan, StyledDiv } from './index.style';
 
 const ContentSection = () => {
+
+    const images = [
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoImage2.png`,
+            caption: ''
+        }
+    ];
 
     return (
         <>
@@ -15,8 +23,10 @@ const ContentSection = () => {
                         <p> São temas voltados para a transformação moral cristã do ser. </p>
                         <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
                             psicografadas por Chico Xavier e outros. </p>
-                        <p> As nossas palestras estão disponíveis para visualização em nosso canal do YouTube. </p>
                     </StyledSpan>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
                 </Wrapper>
             </DesktopOrLaptop>
             <TabletOrMobile>
@@ -27,8 +37,10 @@ const ContentSection = () => {
                         <p> São temas voltados para a transformação moral cristã do ser. </p>
                         <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
                             psicografadas por Chico Xavier e outros. </p>
-                        <p> As nossas palestras estão disponíveis para visualização em nosso canal do YouTube. </p>
                     </StyledSpan>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
                 </Wrapper>
             </TabletOrMobile>
         </>

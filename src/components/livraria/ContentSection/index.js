@@ -31,8 +31,8 @@ const ContentSection = () => {
                 <Wrapper desktop>
                     <StyledSpan>
                         <p> &quot;É muito bom ler...O Espiritismo está fundamentado na razão (no raciocínio),
-                            na lógica, no equilíbrio e no bom senso, sobretudo na razão, de tal mode
-                            que a leitura e, de preferência, a leitura constante, intensa, constitui
+                            na lógica, no equilíbrio e no bom senso, sobretudo na razão, de tal modo
+                            que a leitura e, de preferência, a leitura constante e intensa, constitui
                             grande contributo ao seu entendimento, à sua boa compreensão&quot;. <Italic>(Artigo
                             &quot;A importância da leitura de Antônio Moris Cury&quot;)</Italic> </p>
                         <p> &quot;O Livro Espírita liberta, consola, ensina, nos faz parar para refletir sobre
@@ -45,8 +45,8 @@ const ContentSection = () => {
                             Acreditamos que a leitura é de extrema importância para o amadurecimento mental e
                             espiritual, por isso disponibilizamos obras de autores vistos como referências
                             para a doutrina Espírita. </p>
-                        <p> <Bold>A livraria dispõe de livros usados com preço acessível e recebe doações de
-                            livros Espíritas para o nosso acervo onde podemos fazer um maior intercâmbio
+                        <p> <Bold>A livraria dispõe de livros a preços acessíveis e recebe doações de
+                            livros Espíritas para o nosso acervo, onde podemos fazer um maior intercâmbio
                             da leitura Espírita!!!</Bold> </p>
                     </StyledSpan>
                     <StyledDiv>
@@ -79,8 +79,8 @@ const ContentSection = () => {
                 <Wrapper>
                     <StyledSpan>
                         <p> &quot;É muito bom ler...O Espiritismo está fundamentado na razão (no raciocínio),
-                            na lógica, no equilíbrio e no bom senso, sobretudo na razão, de tal mode
-                            que a leitura e, de preferência, a leitura constante, intensa, constitui
+                            na lógica, no equilíbrio e no bom senso, sobretudo na razão, de tal modo
+                            que a leitura e, de preferência, a leitura constante e intensa, constitui
                             grande contributo ao seu entendimento, à sua boa compreensão&quot;. <Italic>(Artigo
                             &quot;A importância da leitura de Antônio Moris Cury&quot;)</Italic> </p>
                         <p> &quot;O Livro Espírita liberta, consola, ensina, nos faz parar para refletir sobre
@@ -93,8 +93,8 @@ const ContentSection = () => {
                             Acreditamos que a leitura é de extrema importância para o amadurecimento mental e
                             espiritual, por isso disponibilizamos obras de autores vistos como referências
                             para a doutrina Espírita. </p>
-                        <p> <Bold>A livraria dispõe de livros usados com preço acessível e recebe doações de
-                            livros Espíritas para o nosso acervo onde podemos fazer um maior intercâmbio
+                        <p> <Bold>A livraria dispõe de livros a preços acessíveis e recebe doações de
+                            livros Espíritas para o nosso acervo, onde podemos fazer um maior intercâmbio
                             da leitura Espírita!!!</Bold> </p>
                     </StyledSpan>
                     <StyledDiv>

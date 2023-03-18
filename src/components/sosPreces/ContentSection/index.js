@@ -8,18 +8,6 @@ const ContentSection = () => {
 
     const images = [
         {
-            image: `${process.env.PUBLIC_URL}\\images\\SosPrecesImage.png`,
-            caption: ''
-        },
-        {
-            image: `${process.env.PUBLIC_URL}\\images\\SosPrecesImage1.png`,
-            caption: ''
-        },
-        {
-            image: `${process.env.PUBLIC_URL}\\images\\SosPrecesImage2.png`,
-            caption: ''
-        },
-        {
             image: `${process.env.PUBLIC_URL}\\images\\SosPrecesImage3.png`,
             caption: ''
         }
@@ -32,11 +20,11 @@ const ContentSection = () => {
                     <StyledSpan>
                         <p> Esta atividade tem por objetivo prestar assistência espiritual e
                             emocional às pessoas que ligam para o telefone <Bold>(31) 3334-9700</Bold>,
-                            instalado no endereço desta Sociedade, em busca de alívio, conforto e força para
+                            em busca de alívio, conforto e força para
                             enfrentar as vicissitudes da vida. </p>
-                        <p> É um atendimento gratuito pelo qual o atendido, normalmente sofrendo por
-                            problemas emocionais, familiares, saúde e diversos outros semelhantes
-                            que trazem desânimo depressões que geram muitas vezes situações de
+                        <p> É um atendimento gratuito pelo qual o atendido está, normalmente, sofrendo por
+                            problemas emocionais, familiares, de saúde e diversos outros semelhantes,
+                            que trazem desânimo, depressões e, muitas vezes, situações de
                             tentativas de suicídios.  </p>
                         <p> É um trabalho que muito gratifica nossa Casa. </p>
                     </StyledSpan>
@@ -50,11 +38,11 @@ const ContentSection = () => {
                     <StyledSpan>
                         <p> Esta atividade tem por objetivo prestar assistência espiritual e
                             emocional às pessoas que ligam para o telefone <Bold>(31) 3334-9700</Bold>,
-                            instalado no endereço desta Sociedade, em busca de alívio, conforto e força para
+                            em busca de alívio, conforto e força para
                             enfrentar as vicissitudes da vida. </p>
-                        <p> É um atendimento gratuito pelo qual o atendido, normalmente sofrendo por
-                            problemas emocionais, familiares, saúde e diversos outros semelhantes
-                            que trazem desânimo depressões que geram muitas vezes situações de
+                        <p> É um atendimento gratuito pelo qual o atendido está, normalmente, sofrendo por
+                            problemas emocionais, familiares, de saúde e diversos outros semelhantes,
+                            que trazem desânimo, depressões e, muitas vezes, situações de
                             tentativas de suicídios.  </p>
                         <p> É um trabalho que muito gratifica nossa Casa. </p>
                     </StyledSpan>
