@@ -19,7 +19,7 @@ const TrabalhoReligiosoSection = ({ rightImage }) => {
                     <p> A <Bold>Fraternidade Espírita Clara de Fontaine</Bold>, fundada em 02 de setembro de 1994,
                         é uma organização religiosa, com atividades nas áreas assistencial, cultural, beneficente e
                         filantrópica, sem fins lucrativos, de prazo indeterminado e tem domicílio, sede e foro na cidade
-                        de Belo Horizonte, estado de Minas Gerais, no endereço da Rua Três Pontas, nº 1.137 B, bairro
+                        de Belo Horizonte, estado de Minas Gerais, no endereço da Rua Três Pontas, nº 1.137 B, Bairro
                         Carlos Prates.</p>
                     <p> A casa oferece, de forma inteiramente gratuita, os seguintes serviços: {availableServices.join('; ')}.</p>
                 </>

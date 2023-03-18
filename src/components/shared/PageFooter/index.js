@@ -16,7 +16,7 @@ const PageFooter = () => {
     const availableServices = Object.values(Pages);
     availableServices.shift();
 
-    const address = 'Rua Três Pontas, nº 1.137 B - bairro Carlos Prates - Belo Horizonte - MG - CEP: 30710-560';
+    const address = 'Rua Três Pontas, nº 1.137 B - Bairro Carlos Prates - Belo Horizonte - MG - CEP: 30710-560';
     const phone = '(31) 3334-9700';
 
     const handleAddressClick = () => {
