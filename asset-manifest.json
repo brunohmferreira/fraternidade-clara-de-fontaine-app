@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css",
-    "main.js": "/fraternidade-clara-de-fontaine-app/static/js/main.6083b9b0.chunk.js",
-    "main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/main.6083b9b0.chunk.js.map",
-    "runtime-main.js": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.7ce26580.js",
-    "runtime-main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.7ce26580.js.map",
-    "static/css/2.776aa6ba.chunk.css": "/fraternidade-clara-de-fontaine-app/static/css/2.776aa6ba.chunk.css",
-    "static/js/2.b22583f0.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/2.b22583f0.chunk.js",
-    "static/js/2.b22583f0.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/2.b22583f0.chunk.js.map",
-    "static/js/3.72b15bfd.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/3.72b15bfd.chunk.js",
-    "static/js/3.72b15bfd.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/3.72b15bfd.chunk.js.map",
+    "main.js": "/fraternidade-clara-de-fontaine-app/static/js/main.45f1ac58.chunk.js",
+    "main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/main.45f1ac58.chunk.js.map",
+    "runtime-main.js": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.bafddeec.js",
+    "runtime-main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.bafddeec.js.map",
+    "static/css/2.dc0e2b47.chunk.css": "/fraternidade-clara-de-fontaine-app/static/css/2.dc0e2b47.chunk.css",
+    "static/js/2.9e952f7e.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/2.9e952f7e.chunk.js",
+    "static/js/2.9e952f7e.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/2.9e952f7e.chunk.js.map",
+    "static/js/3.8e30de5f.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/3.8e30de5f.chunk.js",
+    "static/js/3.8e30de5f.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/3.8e30de5f.chunk.js.map",
     "index.html": "/fraternidade-clara-de-fontaine-app/index.html",
-    "static/css/2.776aa6ba.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/2.776aa6ba.chunk.css.map",
+    "static/css/2.dc0e2b47.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/2.dc0e2b47.chunk.css.map",
     "static/css/main.c0ed8015.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css.map",
-    "static/js/2.b22583f0.chunk.js.LICENSE.txt": "/fraternidade-clara-de-fontaine-app/static/js/2.b22583f0.chunk.js.LICENSE.txt",
+    "static/js/2.9e952f7e.chunk.js.LICENSE.txt": "/fraternidade-clara-de-fontaine-app/static/js/2.9e952f7e.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/fraternidade-clara-de-fontaine-app/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ce26580.js",
-    "static/css/2.776aa6ba.chunk.css",
-    "static/js/2.b22583f0.chunk.js",
+    "static/js/runtime-main.bafddeec.js",
+    "static/css/2.dc0e2b47.chunk.css",
+    "static/js/2.9e952f7e.chunk.js",
     "static/css/main.c0ed8015.chunk.css",
-    "static/js/main.6083b9b0.chunk.js"
+    "static/js/main.45f1ac58.chunk.js"
   ]
 }
