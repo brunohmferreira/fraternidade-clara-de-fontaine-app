@@ -3,9 +3,25 @@ import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
 import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
+import Carousel from '../../shared/Carousel';
 import { Wrapper, StyledSpanTitle, StyledSpanText, StyledSpanReference, StyledDiv, StyledDivContent, Bold } from './index.style';
 
 const ContentSection = () => {
+
+    const images = [
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\CampanhaDoQuiloImage.png`,
+            caption: ''
+        },
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\CampanhaDoQuiloImage2.png`,
+            caption: ''
+        },
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\CampanhaDoQuiloImage3.png`,
+            caption: ''
+        }
+    ];
 
     return (
         <>
@@ -245,6 +261,9 @@ const ContentSection = () => {
                             <p> Belo Horizonte, 07.03.2002. </p>
                         </StyledSpanReference>
                     </StyledDiv>
+                    <StyledDiv>
+                        <Carousel data={images} />
+                    </StyledDiv>
                 </Wrapper>
             </DesktopOrLaptop>
             <TabletOrMobile>
@@ -482,6 +501,9 @@ const ContentSection = () => {
                             <p> Presidente do Conselho Espírita Municipal da AME-BII. </p>
                             <p> Belo Horizonte, 07.03.2002. </p>
                         </StyledSpanReference>
+                    </StyledDiv>
+                    <StyledDiv>
+                        <Carousel data={images} />
                     </StyledDiv>
                 </Wrapper>
             </TabletOrMobile>

@@ -14,6 +14,10 @@ const ContentSection = () => {
         {
             image: `${process.env.PUBLIC_URL}\\images\\AtendimentoFraternoImage.png`,
             caption: ''
+        },
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\AtendimentoFraternoImage3.png`,
+            caption: ''
         }
     ];
 

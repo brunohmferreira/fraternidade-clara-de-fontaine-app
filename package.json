@@ -1,13 +1,12 @@
 {
   "name": "fraternidade-clara-de-fontaine-app",
   "version": "1.0.0",
-  "homepage": "https://brunohmferreira.github.io/fraternidade-clara-de-fontaine-app/",
+  "homepage": "https://claradefontaine.com.br",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-carousel-minimal": "^1.4.1",
     "react-dom": "^17.0.2",
@@ -49,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-react": "^7.26.1"
+    "eslint-plugin-react": "^7.26.1",
+    "gh-pages": "^5.0.0"
   }
 }

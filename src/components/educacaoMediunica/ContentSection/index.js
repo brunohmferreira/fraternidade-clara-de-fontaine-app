@@ -9,7 +9,7 @@ const ContentSection = () => {
 
     const images = [
         {
-            image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoImage2.png`,
+            image: `${process.env.PUBLIC_URL}\\images\\EducacaoMediunicaImage.png`,
             caption: ''
         }
     ];
