@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css",
-    "main.js": "/fraternidade-clara-de-fontaine-app/static/js/main.9f3f70fb.chunk.js",
-    "main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/main.9f3f70fb.chunk.js.map",
-    "runtime-main.js": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.bafddeec.js",
-    "runtime-main.js.map": "/fraternidade-clara-de-fontaine-app/static/js/runtime-main.bafddeec.js.map",
-    "static/css/2.dc0e2b47.chunk.css": "/fraternidade-clara-de-fontaine-app/static/css/2.dc0e2b47.chunk.css",
-    "static/js/2.9e952f7e.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/2.9e952f7e.chunk.js",
-    "static/js/2.9e952f7e.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/2.9e952f7e.chunk.js.map",
-    "static/js/3.8e30de5f.chunk.js": "/fraternidade-clara-de-fontaine-app/static/js/3.8e30de5f.chunk.js",
-    "static/js/3.8e30de5f.chunk.js.map": "/fraternidade-clara-de-fontaine-app/static/js/3.8e30de5f.chunk.js.map",
-    "index.html": "/fraternidade-clara-de-fontaine-app/index.html",
-    "static/css/2.dc0e2b47.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/2.dc0e2b47.chunk.css.map",
-    "static/css/main.c0ed8015.chunk.css.map": "/fraternidade-clara-de-fontaine-app/static/css/main.c0ed8015.chunk.css.map",
-    "static/js/2.9e952f7e.chunk.js.LICENSE.txt": "/fraternidade-clara-de-fontaine-app/static/js/2.9e952f7e.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/fraternidade-clara-de-fontaine-app/static/media/outline-icons.ddae9b1b.woff"
+    "main.css": "/static/css/main.c0ed8015.chunk.css",
+    "main.js": "/static/js/main.34289ef3.chunk.js",
+    "main.js.map": "/static/js/main.34289ef3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ecc05501.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ecc05501.js.map",
+    "static/css/2.14d42550.chunk.css": "/static/css/2.14d42550.chunk.css",
+    "static/js/2.2abf0281.chunk.js": "/static/js/2.2abf0281.chunk.js",
+    "static/js/2.2abf0281.chunk.js.map": "/static/js/2.2abf0281.chunk.js.map",
+    "static/js/3.8e30de5f.chunk.js": "/static/js/3.8e30de5f.chunk.js",
+    "static/js/3.8e30de5f.chunk.js.map": "/static/js/3.8e30de5f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.14d42550.chunk.css.map": "/static/css/2.14d42550.chunk.css.map",
+    "static/css/main.c0ed8015.chunk.css.map": "/static/css/main.c0ed8015.chunk.css.map",
+    "static/js/2.2abf0281.chunk.js.LICENSE.txt": "/static/js/2.2abf0281.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.bafddeec.js",
-    "static/css/2.dc0e2b47.chunk.css",
-    "static/js/2.9e952f7e.chunk.js",
+    "static/js/runtime-main.ecc05501.js",
+    "static/css/2.14d42550.chunk.css",
+    "static/js/2.2abf0281.chunk.js",
     "static/css/main.c0ed8015.chunk.css",
-    "static/js/main.9f3f70fb.chunk.js"
+    "static/js/main.34289ef3.chunk.js"
   ]
 }
