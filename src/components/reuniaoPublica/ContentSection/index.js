@@ -2,7 +2,7 @@ import React from 'react';
 import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
 import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
 import Carousel from '../../shared/Carousel';
-import { Wrapper, StyledSpan, StyledDiv } from './index.style';
+import { Wrapper, StyledSpan, StyledDiv, StyledSpanTitle } from './index.style';
 
 const ContentSection = () => {
 
@@ -10,7 +10,10 @@ const ContentSection = () => {
         {
             image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoImage2.png`,
             caption: ''
-        },
+        }
+    ];
+
+    const scheduleImage = [
         {
             image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoNovembro2023Image.png`,
             caption: ''
@@ -21,13 +24,18 @@ const ContentSection = () => {
         <>
             <DesktopOrLaptop>
                 <Wrapper desktop>
-                    <StyledSpan>
-                        <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir
-                            sobre nossa conduta enquanto encarnados. </p>
-                        <p> São temas voltados para a transformação moral cristã do ser. </p>
-                        <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
-                            psicografadas por Chico Xavier e outros. </p>
-                    </StyledSpan>
+                    <StyledSpanTitle>
+                        Agenda do mês
+                    </StyledSpanTitle>
+                    <Carousel data={scheduleImage} />
+                    <StyledDiv>
+                        <StyledSpan>
+                            <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir
+                                sobre nossa conduta enquanto encarnados. São temas voltados para a transformação moral cristã do ser. </p>
+                            <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
+                                psicografadas por Chico Xavier e outros. </p>
+                        </StyledSpan>
+                    </StyledDiv>
                     <StyledDiv>
                         <Carousel data={images} />
                     </StyledDiv>
@@ -35,13 +43,18 @@ const ContentSection = () => {
             </DesktopOrLaptop>
             <TabletOrMobile>
                 <Wrapper>
-                    <StyledSpan>
-                        <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir
-                            sobre nossa conduta enquanto encarnados. </p>
-                        <p> São temas voltados para a transformação moral cristã do ser. </p>
-                        <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
-                            psicografadas por Chico Xavier e outros. </p>
-                    </StyledSpan>
+                    <StyledSpanTitle>
+                        Agenda do mês
+                    </StyledSpanTitle>
+                    <Carousel data={scheduleImage} />
+                    <StyledDiv>
+                        <StyledSpan>
+                            <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir
+                                sobre nossa conduta enquanto encarnados. São temas voltados para a transformação moral cristã do ser. </p>
+                            <p> Temas estes extraídos do Evangelho segundo o espiritismo, livro dos espíritos, obras
+                                psicografadas por Chico Xavier e outros. </p>
+                        </StyledSpan>
+                    </StyledDiv>
                     <StyledDiv>
                         <Carousel data={images} />
                     </StyledDiv>

@@ -19,3 +19,11 @@ export const StyledDiv = styled.div`
     width: 100%;
     height: min-content;
 `;
+
+export const StyledSpanTitle = styled.span`
+    font-size: 20px;
+    color: var(--color-secondary);
+    text-align: justify;
+    font-weight: bold;
+    margin-bottom: 5%;
+`;
