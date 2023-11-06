@@ -263,7 +263,7 @@ const ContentSection = () => {
                         <StyledDivContent>
                             <StyledSpanText>
                                 <p> Composto de 14 passos/módulos subdivididos originalmente em 188 reuniões
-                                    -  há necessidade de participar das reuniões (atualmente online e presencial). </p>
+                                    -  há necessidade de participar das reuniões (atualmente online). </p>
                                 <p> O vício é a manifestação externa da dependência espiritual. </p>
                                 <p> O objetivo é a libertação da dependência espiritual. </p>
                                 <p> Fundamental a vontade de mudar. </p>
@@ -313,7 +313,7 @@ const ContentSection = () => {
                         <StyledDivContent>
                             <StyledSpanText>
                                 <p> Composto de 14 passos/módulos subdivididos originalmente em 188 reuniões
-                                    -  há necessidade de participar das reuniões (atualmente online e presencial). </p>
+                                    -  há necessidade de participar das reuniões (atualmente online). </p>
                                 <p> O vício é a manifestação externa da dependência espiritual. </p>
                                 <p> O objetivo é a libertação da dependência espiritual. </p>
                                 <p> Fundamental a vontade de mudar. </p>

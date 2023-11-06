@@ -10,6 +10,10 @@ const ContentSection = () => {
         {
             image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoImage2.png`,
             caption: ''
+        },
+        {
+            image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoNovembro2023Image.png`,
+            caption: ''
         }
     ];
 
