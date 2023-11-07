@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Image } from 'semantic-ui-react';
 
 export const Wrapper = styled.div`
     ${props => props.desktop ? `
@@ -26,4 +27,12 @@ export const StyledSpanTitle = styled.span`
     text-align: justify;
     font-weight: bold;
     margin-bottom: 5%;
+`;
+
+export const StyledImage = styled(Image)`
+    width: 50%;
+    height: 50%;
+    z-index: 0;
+    padding: 2% 0;
+    margin: auto;
 `;

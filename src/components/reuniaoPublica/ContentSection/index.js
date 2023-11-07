@@ -2,7 +2,7 @@ import React from 'react';
 import DesktopOrLaptop from '../../../shared/devices/DesktopOrLaptop';
 import TabletOrMobile from '../../../shared/devices/TabletOrMobile';
 import Carousel from '../../shared/Carousel';
-import { Wrapper, StyledSpan, StyledDiv, StyledSpanTitle } from './index.style';
+import { Wrapper, StyledSpan, StyledDiv, StyledSpanTitle, StyledImage } from './index.style';
 
 const ContentSection = () => {
 
@@ -13,12 +13,7 @@ const ContentSection = () => {
         }
     ];
 
-    const scheduleImage = [
-        {
-            image: `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoNovembro2023Image.png`,
-            caption: ''
-        }
-    ];
+    const scheduleImage = `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoNovembro2023Image.png`;
 
     return (
         <>
@@ -27,7 +22,7 @@ const ContentSection = () => {
                     <StyledSpanTitle>
                         Agenda do mês
                     </StyledSpanTitle>
-                    <Carousel data={scheduleImage} />
+                    <StyledImage src={scheduleImage} />
                     <StyledDiv>
                         <StyledSpan>
                             <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir
@@ -46,7 +41,7 @@ const ContentSection = () => {
                     <StyledSpanTitle>
                         Agenda do mês
                     </StyledSpanTitle>
-                    <Carousel data={scheduleImage} />
+                    <StyledImage src={scheduleImage} />
                     <StyledDiv>
                         <StyledSpan>
                             <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir

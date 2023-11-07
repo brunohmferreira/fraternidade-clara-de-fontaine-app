@@ -20,12 +20,18 @@ const MainSection = () => {
                 <StyledDivButton>
                     <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO' onClick={() => handleChangePage(Pages.TrabalhoReligioso)} />
                 </StyledDivButton>
+                <StyledDivButton paddingTop={'30%'}>
+                    <StyledButton content='VEJA NOSSA AGENDA DE REUNIÕES PÚBLICAS' onClick={() => handleChangePage(Pages.ReuniaoPublica)} />
+                </StyledDivButton>
             </DesktopOrLaptop>
             <TabletOrMobile>
                 <StyledImage src={`${process.env.PUBLIC_URL}\\images\\SunflowersBackground.png`} />
                 <StyledDivTitle>
                     <LogoAndName showName showLogo={false} nameFontSize='25px' />
                 </StyledDivTitle>
+                <StyledDivButton paddingTop={'30%'}>
+                    <StyledButton content='AGENDA DE REUNIÕES PÚBLICAS' onClick={() => handleChangePage(Pages.ReuniaoPublica)} />
+                </StyledDivButton>
             </TabletOrMobile>
         </>
     );

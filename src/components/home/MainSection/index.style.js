@@ -31,6 +31,12 @@ export const StyledDivButton = styled.div`
     width: 70%;
     padding-top: 20%;
     z-index: 0;
+
+    ${props => props.paddingTop ? `
+        padding-top: ${props.paddingTop};
+    ` : `
+        padding-top: 20%;
+    `}
 `;
 
 export const StyledButton = styled(Button)`
