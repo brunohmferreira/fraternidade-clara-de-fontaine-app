@@ -35,4 +35,12 @@ export const StyledImage = styled(Image)`
     z-index: 0;
     padding: 2% 0;
     margin: auto;
+
+    ${props => props.widthAndHeight ? `
+        width: ${props.widthAndHeight};
+        height: ${props.widthAndHeight};
+    ` : `
+        width: 50%;
+        height: 50%;
+    `}
 `;

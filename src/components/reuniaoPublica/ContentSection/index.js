@@ -41,7 +41,7 @@ const ContentSection = () => {
                     <StyledSpanTitle>
                         Agenda do mês
                     </StyledSpanTitle>
-                    <StyledImage src={scheduleImage} />
+                    <StyledImage src={scheduleImage} widthAndHeight={'70%'} />
                     <StyledDiv>
                         <StyledSpan>
                             <p> As reuniões públicas tem como objetivo nos trazer temas que nos levam a refletir
