@@ -30,17 +30,17 @@ export const StyledSpanTitle = styled.span`
 `;
 
 export const StyledImage = styled(Image)`
-    width: 50%;
-    height: 50%;
     z-index: 0;
     padding: 2% 0;
     margin: auto;
+    border: 1px solid #000!important;
+    border-radius: 4px;
 
     ${props => props.widthAndHeight ? `
         width: ${props.widthAndHeight};
         height: ${props.widthAndHeight};
     ` : `
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 80%;
     `}
 `;

@@ -18,10 +18,10 @@ const MainSection = () => {
                     <LogoAndName showName />
                 </StyledDivTitle>
                 <StyledDivButton>
-                    <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO' onClick={() => handleChangePage(Pages.TrabalhoReligioso)} />
-                </StyledDivButton>
-                <StyledDivButton paddingTop={'30%'}>
-                    <StyledButton content='VEJA NOSSA AGENDA DE REUNIÕES PÚBLICAS' onClick={() => handleChangePage(Pages.ReuniaoPublica)} />
+                    <StyledButton content='CONHEÇA NOSSO TRABALHO RELIGIOSO'
+                        onClick={() => handleChangePage(Pages.TrabalhoReligioso)} />
+                    <StyledButton marginTop={'1%'} content='VEJA NOSSA AGENDA DE REUNIÕES PÚBLICAS'
+                        onClick={() => handleChangePage(Pages.ReuniaoPublica)} />
                 </StyledDivButton>
             </DesktopOrLaptop>
             <TabletOrMobile>

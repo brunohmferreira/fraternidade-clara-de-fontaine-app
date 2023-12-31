@@ -26,16 +26,15 @@ export const StyledDivTitle = styled.div`
 export const StyledDivButton = styled.div`
     position: absolute !important;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 70%;
     padding-top: 20%;
     z-index: 0;
 
-    ${props => props.paddingTop ? `
+    ${props => props.paddingTop && `
         padding-top: ${props.paddingTop};
-    ` : `
-        padding-top: 20%;
     `}
 `;
 
@@ -51,6 +50,10 @@ export const StyledButton = styled(Button)`
     background-repeat: no-repeat !important;
     background-size: 0% 100% !important;
     transition: background-size .5s, color .5s, all .3s ease !important;
+
+    ${props => props.marginTop && `
+        margin-top: ${props.marginTop} !important;
+    `}
 
     &:hover {
         background-size: 100% 100% !important;

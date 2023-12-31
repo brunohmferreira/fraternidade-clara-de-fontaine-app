@@ -13,7 +13,7 @@ const ContentSection = () => {
         }
     ];
 
-    const scheduleImage = `${process.env.PUBLIC_URL}\\images\\TrabalhoReligiosoDezembro2023Image.png`;
+    const scheduleImage = `${process.env.PUBLIC_URL}\\images\\CartaAnoNovo2024.png`;
 
     return (
         <>
